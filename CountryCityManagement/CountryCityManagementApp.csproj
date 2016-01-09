@@ -66,6 +66,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Global.asax" />
+    <Content Include="UI\CountryEntryUI.aspx" />
     <Content Include="UI\ViewCountriesUI.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -82,6 +83,13 @@
     <Compile Include="Models\Country.cs" />
     <Compile Include="Models\CountryViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UI\CountryEntryUI.aspx.cs">
+      <DependentUpon>CountryEntryUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\CountryEntryUI.aspx.designer.cs">
+      <DependentUpon>CountryEntryUI.aspx</DependentUpon>
+    </Compile>
     <Compile Include="UI\ViewCountriesUI.aspx.cs">
       <DependentUpon>ViewCountriesUI.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

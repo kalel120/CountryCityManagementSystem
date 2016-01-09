@@ -13,7 +13,7 @@ namespace CountryCityManagement.UI {
     public partial class ViewCountriesUI {
         
         /// <summary>
-        /// form1 control.
+        /// CountryEntryForm control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
