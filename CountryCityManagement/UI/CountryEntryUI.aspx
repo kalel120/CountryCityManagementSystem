@@ -37,6 +37,8 @@
                 </textarea><br />
                 <asp:Button ID="saveButton" runat="server" Text="Save" />
                 <asp:Button ID="cancelButton" runat="server" Text="Cancel" />
+                <br />
+                <asp:Label ID="messageLabel" runat="server"></asp:Label>
             </asp:Panel>
         </div>
         <div>
