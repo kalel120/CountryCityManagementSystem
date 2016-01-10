@@ -6,7 +6,7 @@ namespace CountryCityManagement.Business_Logic {
     public class CountryManager {
         private CountryGateway objCountryGateway = new CountryGateway();
         internal bool CheckCountryByName( string countryName ) {
-            return objCountryGateway.CheckCountryByName();
+            return objCountryGateway.CheckCountryByName(countryName);
         }
 
         internal string InsertCountryInfo( Country objCountry ) {
