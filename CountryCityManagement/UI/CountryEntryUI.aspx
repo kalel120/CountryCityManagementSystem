@@ -26,24 +26,49 @@
 </head>
 <body>
     <form id="CountryEntryForm" runat="server">
+        <h1>Country Entry</h1>
         <div>
-            <asp:Panel ID="inputPanel" runat="server">
+            <asp:Panel ID="inputPanel" runat="server" style="margin-left: 157px" Width="677px">
                 <asp:Label ID="Label1" runat="server" Text="Name"></asp:Label>
                 <asp:TextBox ID="nameTextBox" runat="server"></asp:TextBox>
                 <br />
+                <br />
                 <asp:Label ID="Label2" runat="server" Text="About"></asp:Label>
-                <textarea id="aboutTextArea" cols="20" name="S1" rows="2">
+                <textarea id="aboutTextArea" cols="20" name="S1" rows="2" runat="server">
                     Text
                 </textarea><br />
-                <asp:Button ID="saveButton" runat="server" Text="Save" />
-                <asp:Button ID="cancelButton" runat="server" Text="Cancel" />
+                <br />
+                <br />
+                <asp:Button ID="saveButton" runat="server" Text="Save" OnClick="saveButton_Click" Width="60px" />
+                <br />
+                <asp:Button ID="cancelButton" runat="server" Text="Cancel" OnClick="cancelButton_Click" />
+                <br />
+                <br />
                 <br />
                 <asp:Label ID="messageLabel" runat="server"></asp:Label>
+                <br />
             </asp:Panel>
         </div>
-        <div>
-            <asp:Panel ID="gridviewPanel" runat="server">
-                <asp:GridView ID="countryEntryGridView" runat="server">
+        <div>.
+            <asp:Panel ID="gridviewPanel" runat="server" Height="192px" style="margin-top: 61px">
+                <asp:GridView ID="countryEntryGridView" runat="server" AutoGenerateColumns="False" style="margin-left: 350px">
+                    <Columns>
+                        <asp:TemplateField HeaderText="SL#">
+                            <ItemTemplate>
+                                <asp:Label runat="server" Text='<%#Eval("CountrySL") %>'></asp:Label>
+                            </ItemTemplate>
+                        </asp:TemplateField>
+                        <asp:TemplateField HeaderText="Name">
+                            <ItemTemplate>
+                                <asp:Label runat="server" Text='<%#Eval("CountryName") %>'></asp:Label>
+                            </ItemTemplate>
+                        </asp:TemplateField>
+                        <asp:TemplateField HeaderText="About">
+                            <ItemTemplate>
+                                <asp:Label runat="server" Text='<%#Eval("AboutCountry") %>'></asp:Label>
+                            </ItemTemplate>
+                        </asp:TemplateField>
+                    </Columns>
                 </asp:GridView>
             </asp:Panel>
         </div>
