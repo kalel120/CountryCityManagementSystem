@@ -10,6 +10,9 @@ namespace CountryCityManagement.Business_Logic {
         }
 
         internal string InsertCountryInfo( Country objCountry ) {
+            if (CheckCountryByName(objCountry.CountryName)) {
+                return "Country Name Already exists";
+            }
             int affectedRow = objCountryGateway.InsertInfo(objCountry);
             if (affectedRow > 0) {
                 return "Insert Succesfull";
@@ -20,6 +23,6 @@ namespace CountryCityManagement.Business_Logic {
         internal List<Country> GetAllCountryInfo() {
             List<Country> countries = objCountryGateway.GetAllInfo();
             return countries;
-        } 
+        }
     }
 }
