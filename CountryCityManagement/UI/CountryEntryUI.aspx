@@ -26,21 +26,24 @@
 </head>
 <body>
     <form id="CountryEntryForm" runat="server">
-        <h1>Country Entry</h1>
         <div>
-            <asp:Panel ID="inputPanel" runat="server" style="margin-left: 157px" Width="677px">
-                <asp:Label ID="Label1" runat="server" Text="Name"></asp:Label>
+            <asp:Panel ID="inputPanel" runat="server" Style="margin-left: 0px" Width="677px" Height="297px" BackColor="#FAFAE7">
+                <asp:Label ID="Label3" runat="server" Text="Country Entry" Font-Bold="True" Font-Size="Larger"></asp:Label>
+                <br />
+                &nbsp;<asp:Label ID="Label1" runat="server" Text="Name"></asp:Label>
+                <br />
                 <asp:TextBox ID="nameTextBox" runat="server"></asp:TextBox>
                 <br />
                 <br />
                 <asp:Label ID="Label2" runat="server" Text="About"></asp:Label>
-                <textarea id="aboutTextArea" cols="20" name="S1" rows="2" runat="server">
-                    Text
+                <br />
+                <textarea id="aboutTextArea" runat="server" cols="20" name="S1" rows="2">
+                    Input Country Information Here
                 </textarea><br />
                 <br />
                 <br />
                 <asp:Button ID="saveButton" runat="server" Text="Save" OnClick="saveButton_Click" Width="60px" />
-                <br />
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <asp:Button ID="cancelButton" runat="server" Text="Cancel" OnClick="cancelButton_Click" />
                 <br />
                 <br />
@@ -49,9 +52,10 @@
                 <br />
             </asp:Panel>
         </div>
-        <div>.
-            <asp:Panel ID="gridviewPanel" runat="server" Height="192px" style="margin-top: 61px">
-                <asp:GridView ID="countryEntryGridView" runat="server" AutoGenerateColumns="False" style="margin-left: 350px">
+        <div style="height: 447px">
+            .<asp:Panel ID="gridviewPanel" runat="server" Height="192px" Style="margin-top: 104px">
+                <asp:GridView ID="countryEntryGridView" runat="server" AutoGenerateColumns="False" Style="margin-left: 0px; margin-top: 0px;" BackColor="LightGoldenrodYellow" BorderColor="Tan" BorderWidth="1px" CellPadding="2" ForeColor="Black" GridLines="None" Height="186px" Width="768px">
+                    <AlternatingRowStyle BackColor="PaleGoldenrod" />
                     <Columns>
                         <asp:TemplateField HeaderText="SL#">
                             <ItemTemplate>
@@ -69,8 +73,19 @@
                             </ItemTemplate>
                         </asp:TemplateField>
                     </Columns>
+                    <FooterStyle BackColor="Tan" />
+                    <HeaderStyle BackColor="Tan" Font-Bold="True" />
+                    <PagerStyle BackColor="PaleGoldenrod" ForeColor="DarkSlateBlue" HorizontalAlign="Center" />
+                    <SelectedRowStyle BackColor="DarkSlateBlue" ForeColor="GhostWhite" />
+                    <SortedAscendingCellStyle BackColor="#FAFAE7" />
+                    <SortedAscendingHeaderStyle BackColor="#DAC09E" />
+                    <SortedDescendingCellStyle BackColor="#E1DB9C" />
+                    <SortedDescendingHeaderStyle BackColor="#C2A47B" />
                 </asp:GridView>
             </asp:Panel>
+            <br />
+            <br />
+            &nbsp;
         </div>
         <!-- Include jQuery. -->
         <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
