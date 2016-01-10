@@ -6,12 +6,14 @@
 <head runat="server">
     <title></title>
 </head>
-<body>
+<body style="height: 353px">
     <form id="form1" runat="server">
     <div>
     
         <asp:Panel ID="cityInputPanel" runat="server">
         </asp:Panel>
+    
+        <asp:Button ID="Button1" runat="server" Text="Button" />
     
     </div>
     </form>
