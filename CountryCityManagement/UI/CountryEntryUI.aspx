@@ -27,7 +27,7 @@
 <body>
     <form id="CountryEntryForm" runat="server">
         <div>
-            <asp:Panel ID="inputPanel" runat="server" Style="margin-left: 0px" Width="677px" Height="297px" BackColor="#FAFAE7">
+            <asp:Panel ID="inputPanel" runat="server" Style="margin-left: 0" Width="989px" Height="504px" BackColor="#FAFAE7">
                 <asp:Label ID="Label3" runat="server" Text="Country Entry" Font-Bold="True" Font-Size="Larger"></asp:Label>
                 <br />
                 &nbsp;<asp:Label ID="Label1" runat="server" Text="Name"></asp:Label>
@@ -37,9 +37,7 @@
                 <br />
                 <asp:Label ID="Label2" runat="server" Text="About"></asp:Label>
                 <br />
-                <textarea id="aboutTextArea" runat="server" cols="20" name="S1" rows="2">
-                    Input Country Information Here
-                </textarea><br />
+                <textarea id="aboutTextArea" runat="server" cols="20" name="S1" rows="2"> </textarea><br />
                 <br />
                 <br />
                 <asp:Button ID="saveButton" runat="server" Text="Save" OnClick="saveButton_Click" Width="60px" />
@@ -52,41 +50,39 @@
                 <br />
             </asp:Panel>
         </div>
-        <div style="height: 447px">
-            .<asp:Panel ID="gridviewPanel" runat="server" Height="192px" Style="margin-top: 104px">
-                <asp:GridView ID="countryEntryGridView" runat="server" AutoGenerateColumns="False" Style="margin-left: 0px; margin-top: 0px;" BackColor="LightGoldenrodYellow" BorderColor="Tan" BorderWidth="1px" CellPadding="2" ForeColor="Black" GridLines="None" Height="186px" Width="768px">
-                    <AlternatingRowStyle BackColor="PaleGoldenrod" />
-                    <Columns>
-                        <asp:TemplateField HeaderText="SL#">
-                            <ItemTemplate>
-                                <asp:Label runat="server" Text='<%#Eval("CountrySL") %>'></asp:Label>
-                            </ItemTemplate>
-                        </asp:TemplateField>
-                        <asp:TemplateField HeaderText="Name">
-                            <ItemTemplate>
-                                <asp:Label runat="server" Text='<%#Eval("CountryName") %>'></asp:Label>
-                            </ItemTemplate>
-                        </asp:TemplateField>
-                        <asp:TemplateField HeaderText="About">
-                            <ItemTemplate>
-                                <asp:Label runat="server" Text='<%#Eval("AboutCountry") %>'></asp:Label>
-                            </ItemTemplate>
-                        </asp:TemplateField>
-                    </Columns>
-                    <FooterStyle BackColor="Tan" />
-                    <HeaderStyle BackColor="Tan" Font-Bold="True" />
-                    <PagerStyle BackColor="PaleGoldenrod" ForeColor="DarkSlateBlue" HorizontalAlign="Center" />
-                    <SelectedRowStyle BackColor="DarkSlateBlue" ForeColor="GhostWhite" />
-                    <SortedAscendingCellStyle BackColor="#FAFAE7" />
-                    <SortedAscendingHeaderStyle BackColor="#DAC09E" />
-                    <SortedDescendingCellStyle BackColor="#E1DB9C" />
-                    <SortedDescendingHeaderStyle BackColor="#C2A47B" />
-                </asp:GridView>
-            </asp:Panel>
-            <br />
-            <br />
-            &nbsp;
-        </div>
+        <asp:GridView ID="countryEntryGridView" runat="server" AutoGenerateColumns="False" Style="margin-left: 0; margin-top: 147px;" BackColor="LightGoldenrodYellow" BorderColor="Tan" BorderWidth="1px" CellPadding="2" ForeColor="Black" GridLines="None" Height="186px" Width="768px">
+            <AlternatingRowStyle BackColor="PaleGoldenrod" />
+            <Columns>
+                <asp:TemplateField HeaderText="SL#">
+                    <ItemTemplate>
+                        <asp:Label runat="server" Text='<%#Eval("CountrySL") %>'></asp:Label>
+                    </ItemTemplate>
+                </asp:TemplateField>
+                <asp:TemplateField HeaderText="Name">
+                    <ItemTemplate>
+                        <asp:Label runat="server" Text='<%#Eval("CountryName") %>'></asp:Label>
+                    </ItemTemplate>
+                </asp:TemplateField>
+                <asp:TemplateField HeaderText="About">
+                    <ItemTemplate>
+                        <asp:Label runat="server" Text='<%#Eval("AboutCountry") %>'></asp:Label>
+                    </ItemTemplate>
+                </asp:TemplateField>
+            </Columns>
+            <FooterStyle BackColor="Tan" />
+            <HeaderStyle BackColor="Tan" Font-Bold="True" />
+            <PagerStyle BackColor="PaleGoldenrod" ForeColor="DarkSlateBlue" HorizontalAlign="Center" />
+            <SelectedRowStyle BackColor="DarkSlateBlue" ForeColor="GhostWhite" />
+            <SortedAscendingCellStyle BackColor="#FAFAE7" />
+            <SortedAscendingHeaderStyle BackColor="#DAC09E" />
+            <SortedDescendingCellStyle BackColor="#E1DB9C" />
+            <SortedDescendingHeaderStyle BackColor="#C2A47B" />
+        </asp:GridView>
+
+        <br />
+        <br />
+        &nbsp;
+
         <!-- Include jQuery. -->
         <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
         <!-- Include JS files. -->
@@ -116,7 +112,7 @@
         <script type="text/javascript" src="../froala_editor_2.0.5/js/plugins/url.min.js"></script>
         <script type="text/javascript" src="../froala_editor_2.0.5/js/plugins/video.min.js"></script>
         <!-- Include Language file if we'll use it. -->
-        <script type="text/javascript" src="../js/languages/ro.js"></script>
+        <script type="text/javascript" src="../froala_editor_2.0.5/js/languages/ro.js"></script>
         <!-- Initialize the editor. -->
         <script>
             $(function () {

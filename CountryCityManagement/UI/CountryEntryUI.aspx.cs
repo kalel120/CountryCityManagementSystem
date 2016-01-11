@@ -36,7 +36,7 @@ namespace CountryCityManagement.UI {
         }
 
         protected void cancelButton_Click( object sender, EventArgs e ) {
-            //Response.Redirect();
+            Response.Redirect("IndexUI.aspx");
         }
     }
 }

@@ -57,6 +57,10 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="froala_editor_2.0.5\bower.json" />
+    <Content Include="froala_editor_2.0.5\html\file_s3_upload.php" />
+    <Content Include="froala_editor_2.0.5\html\image_s3_upload.php" />
+    <Content Include="froala_editor_2.0.5\package.json" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -65,10 +69,171 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="froala_editor_2.0.5\css\froala_editor.css" />
+    <Content Include="froala_editor_2.0.5\css\froala_editor.min.css" />
+    <Content Include="froala_editor_2.0.5\css\froala_style.css" />
+    <Content Include="froala_editor_2.0.5\css\froala_style.min.css" />
+    <Content Include="froala_editor_2.0.5\css\plugins\char_counter.css" />
+    <Content Include="froala_editor_2.0.5\css\plugins\char_counter.min.css" />
+    <Content Include="froala_editor_2.0.5\css\plugins\code_view.css" />
+    <Content Include="froala_editor_2.0.5\css\plugins\code_view.min.css" />
+    <Content Include="froala_editor_2.0.5\css\plugins\colors.css" />
+    <Content Include="froala_editor_2.0.5\css\plugins\colors.min.css" />
+    <Content Include="froala_editor_2.0.5\css\plugins\emoticons.css" />
+    <Content Include="froala_editor_2.0.5\css\plugins\emoticons.min.css" />
+    <Content Include="froala_editor_2.0.5\css\plugins\file.css" />
+    <Content Include="froala_editor_2.0.5\css\plugins\file.min.css" />
+    <Content Include="froala_editor_2.0.5\css\plugins\fullscreen.css" />
+    <Content Include="froala_editor_2.0.5\css\plugins\fullscreen.min.css" />
+    <Content Include="froala_editor_2.0.5\css\plugins\image.css" />
+    <Content Include="froala_editor_2.0.5\css\plugins\image.min.css" />
+    <Content Include="froala_editor_2.0.5\css\plugins\image_manager.css" />
+    <Content Include="froala_editor_2.0.5\css\plugins\image_manager.min.css" />
+    <Content Include="froala_editor_2.0.5\css\plugins\line_breaker.css" />
+    <Content Include="froala_editor_2.0.5\css\plugins\line_breaker.min.css" />
+    <Content Include="froala_editor_2.0.5\css\plugins\table.css" />
+    <Content Include="froala_editor_2.0.5\css\plugins\table.min.css" />
+    <Content Include="froala_editor_2.0.5\css\plugins\video.css" />
+    <Content Include="froala_editor_2.0.5\css\plugins\video.min.css" />
+    <Content Include="froala_editor_2.0.5\css\themes\dark.css" />
+    <Content Include="froala_editor_2.0.5\css\themes\dark.min.css" />
+    <Content Include="froala_editor_2.0.5\css\themes\gray.css" />
+    <Content Include="froala_editor_2.0.5\css\themes\gray.min.css" />
+    <Content Include="froala_editor_2.0.5\css\themes\red.css" />
+    <Content Include="froala_editor_2.0.5\css\themes\red.min.css" />
+    <Content Include="froala_editor_2.0.5\css\themes\royal.css" />
+    <Content Include="froala_editor_2.0.5\css\themes\royal.min.css" />
+    <Content Include="froala_editor_2.0.5\html\at.js\index.html" />
+    <Content Include="froala_editor_2.0.5\html\boostrap\content.html" />
+    <Content Include="froala_editor_2.0.5\html\boostrap\lists.html" />
+    <Content Include="froala_editor_2.0.5\html\boostrap\modal.html" />
+    <Content Include="froala_editor_2.0.5\html\colors.html" />
+    <Content Include="froala_editor_2.0.5\html\core.html" />
+    <Content Include="froala_editor_2.0.5\html\direction_rtl.html" />
+    <Content Include="froala_editor_2.0.5\html\disable_edit.html" />
+    <Content Include="froala_editor_2.0.5\html\emoticons.html" />
+    <Content Include="froala_editor_2.0.5\html\enter_br.html" />
+    <Content Include="froala_editor_2.0.5\html\enter_div.html" />
+    <Content Include="froala_editor_2.0.5\html\enter_p.html" />
+    <Content Include="froala_editor_2.0.5\html\events\blur_focus.html" />
+    <Content Include="froala_editor_2.0.5\html\events\content_changed.html" />
+    <Content Include="froala_editor_2.0.5\html\events\drop.html" />
+    <Content Include="froala_editor_2.0.5\html\events\image_removed.html" />
+    <Content Include="froala_editor_2.0.5\html\font_family.html" />
+    <Content Include="froala_editor_2.0.5\html\full.html" />
+    <Content Include="froala_editor_2.0.5\html\full_br.html" />
+    <Content Include="froala_editor_2.0.5\html\full_page.html" />
+    <Content Include="froala_editor_2.0.5\html\full_page_bottom.html" />
+    <Content Include="froala_editor_2.0.5\html\iframe.html" />
+    <Content Include="froala_editor_2.0.5\html\image_manager.html" />
+    <Content Include="froala_editor_2.0.5\html\init_destroy.html" />
+    <Content Include="froala_editor_2.0.5\html\init_inside_iframe\basic.html" />
+    <Content Include="froala_editor_2.0.5\html\init_inside_iframe\content.html" />
+    <Content Include="froala_editor_2.0.5\html\init_inside_iframe\inline.html" />
+    <Content Include="froala_editor_2.0.5\html\init_on_button.html" />
+    <Content Include="froala_editor_2.0.5\html\init_on_click\full.html" />
+    <Content Include="froala_editor_2.0.5\html\init_on_click\full_page.html" />
+    <Content Include="froala_editor_2.0.5\html\init_on_click\toolbar_inline.html" />
+    <Content Include="froala_editor_2.0.5\html\init_on_click\two_editors.html" />
+    <Content Include="froala_editor_2.0.5\html\init_on_h1.html" />
+    <Content Include="froala_editor_2.0.5\html\init_on_image.html" />
+    <Content Include="froala_editor_2.0.5\html\init_on_link.html" />
+    <Content Include="froala_editor_2.0.5\html\jquery_mobile\basic.html" />
+    <Content Include="froala_editor_2.0.5\html\jquery_ui\modal.html" />
+    <Content Include="froala_editor_2.0.5\html\language.html" />
+    <Content Include="froala_editor_2.0.5\html\line_breaker.html" />
+    <Content Include="froala_editor_2.0.5\html\live_preview.html" />
+    <Content Include="froala_editor_2.0.5\html\require_js\index.html" />
+    <Content Include="froala_editor_2.0.5\html\require_js\js\app.js" />
+    <Content Include="froala_editor_2.0.5\html\require_js\js\lib\require.js" />
+    <Content Include="froala_editor_2.0.5\html\scrollable_container.html" />
+    <Content Include="froala_editor_2.0.5\html\show_selection.html" />
+    <Content Include="froala_editor_2.0.5\html\size\height.html" />
+    <Content Include="froala_editor_2.0.5\html\size\max_height.html" />
+    <Content Include="froala_editor_2.0.5\html\size\min_height.html" />
+    <Content Include="froala_editor_2.0.5\html\size\width.html" />
+    <Content Include="froala_editor_2.0.5\html\sticky_toolbar\bottom.html" />
+    <Content Include="froala_editor_2.0.5\html\sticky_toolbar\bottom_offset.html" />
+    <Content Include="froala_editor_2.0.5\html\sticky_toolbar\bottom_offset_scrollable_container.html" />
+    <Content Include="froala_editor_2.0.5\html\sticky_toolbar\bottom_scrollable_container.html" />
+    <Content Include="froala_editor_2.0.5\html\sticky_toolbar\top.html" />
+    <Content Include="froala_editor_2.0.5\html\sticky_toolbar\top_offset.html" />
+    <Content Include="froala_editor_2.0.5\html\sticky_toolbar\top_offset_scrollable_container.html" />
+    <Content Include="froala_editor_2.0.5\html\sticky_toolbar\top_scrollable_container.html" />
+    <Content Include="froala_editor_2.0.5\html\tables.html" />
+    <Content Include="froala_editor_2.0.5\html\textarea.html" />
+    <Content Include="froala_editor_2.0.5\html\themes\dark_theme.html" />
+    <Content Include="froala_editor_2.0.5\html\themes\gray_theme.html" />
+    <Content Include="froala_editor_2.0.5\html\themes\red_theme.html" />
+    <Content Include="froala_editor_2.0.5\html\themes\royal_theme.html" />
+    <Content Include="froala_editor_2.0.5\html\toolbar_inline.html" />
+    <Content Include="froala_editor_2.0.5\html\toolbar_inline_two.html" />
+    <Content Include="froala_editor_2.0.5\html\two_instances.html" />
+    <Content Include="froala_editor_2.0.5\html\z_index.html" />
+    <Content Include="froala_editor_2.0.5\img\photo1.jpg" />
+    <Content Include="froala_editor_2.0.5\js\froala_editor.min.js" />
+    <Content Include="froala_editor_2.0.5\js\languages\ar.js" />
+    <Content Include="froala_editor_2.0.5\js\languages\bs.js" />
+    <Content Include="froala_editor_2.0.5\js\languages\cs.js" />
+    <Content Include="froala_editor_2.0.5\js\languages\da.js" />
+    <Content Include="froala_editor_2.0.5\js\languages\de.js" />
+    <Content Include="froala_editor_2.0.5\js\languages\en_ca.js" />
+    <Content Include="froala_editor_2.0.5\js\languages\en_gb.js" />
+    <Content Include="froala_editor_2.0.5\js\languages\es.js" />
+    <Content Include="froala_editor_2.0.5\js\languages\et.js" />
+    <Content Include="froala_editor_2.0.5\js\languages\fa.js" />
+    <Content Include="froala_editor_2.0.5\js\languages\fi.js" />
+    <Content Include="froala_editor_2.0.5\js\languages\fr.js" />
+    <Content Include="froala_editor_2.0.5\js\languages\he.js" />
+    <Content Include="froala_editor_2.0.5\js\languages\hr.js" />
+    <Content Include="froala_editor_2.0.5\js\languages\hu.js" />
+    <Content Include="froala_editor_2.0.5\js\languages\id.js" />
+    <Content Include="froala_editor_2.0.5\js\languages\it.js" />
+    <Content Include="froala_editor_2.0.5\js\languages\ja.js" />
+    <Content Include="froala_editor_2.0.5\js\languages\ko.js" />
+    <Content Include="froala_editor_2.0.5\js\languages\me.js" />
+    <Content Include="froala_editor_2.0.5\js\languages\nb.js" />
+    <Content Include="froala_editor_2.0.5\js\languages\nl.js" />
+    <Content Include="froala_editor_2.0.5\js\languages\pl.js" />
+    <Content Include="froala_editor_2.0.5\js\languages\pt_br.js" />
+    <Content Include="froala_editor_2.0.5\js\languages\pt_pt.js" />
+    <Content Include="froala_editor_2.0.5\js\languages\ro.js" />
+    <Content Include="froala_editor_2.0.5\js\languages\ru.js" />
+    <Content Include="froala_editor_2.0.5\js\languages\sr.js" />
+    <Content Include="froala_editor_2.0.5\js\languages\sv.js" />
+    <Content Include="froala_editor_2.0.5\js\languages\th.js" />
+    <Content Include="froala_editor_2.0.5\js\languages\tr.js" />
+    <Content Include="froala_editor_2.0.5\js\languages\ua.js" />
+    <Content Include="froala_editor_2.0.5\js\languages\zh_cn.js" />
+    <Content Include="froala_editor_2.0.5\js\languages\zh_tw.js" />
+    <Content Include="froala_editor_2.0.5\js\plugins\align.min.js" />
+    <Content Include="froala_editor_2.0.5\js\plugins\char_counter.min.js" />
+    <Content Include="froala_editor_2.0.5\js\plugins\code_beautifier.min.js" />
+    <Content Include="froala_editor_2.0.5\js\plugins\code_view.min.js" />
+    <Content Include="froala_editor_2.0.5\js\plugins\colors.min.js" />
+    <Content Include="froala_editor_2.0.5\js\plugins\emoticons.min.js" />
+    <Content Include="froala_editor_2.0.5\js\plugins\entities.min.js" />
+    <Content Include="froala_editor_2.0.5\js\plugins\file.min.js" />
+    <Content Include="froala_editor_2.0.5\js\plugins\font_family.min.js" />
+    <Content Include="froala_editor_2.0.5\js\plugins\font_size.min.js" />
+    <Content Include="froala_editor_2.0.5\js\plugins\fullscreen.min.js" />
+    <Content Include="froala_editor_2.0.5\js\plugins\image.min.js" />
+    <Content Include="froala_editor_2.0.5\js\plugins\image_manager.min.js" />
+    <Content Include="froala_editor_2.0.5\js\plugins\inline_style.min.js" />
+    <Content Include="froala_editor_2.0.5\js\plugins\line_breaker.min.js" />
+    <Content Include="froala_editor_2.0.5\js\plugins\link.min.js" />
+    <Content Include="froala_editor_2.0.5\js\plugins\lists.min.js" />
+    <Content Include="froala_editor_2.0.5\js\plugins\paragraph_format.min.js" />
+    <Content Include="froala_editor_2.0.5\js\plugins\paragraph_style.min.js" />
+    <Content Include="froala_editor_2.0.5\js\plugins\quote.min.js" />
+    <Content Include="froala_editor_2.0.5\js\plugins\save.min.js" />
+    <Content Include="froala_editor_2.0.5\js\plugins\table.min.js" />
+    <Content Include="froala_editor_2.0.5\js\plugins\url.min.js" />
+    <Content Include="froala_editor_2.0.5\js\plugins\video.min.js" />
     <Content Include="Global.asax" />
     <Content Include="UI\CityEntryUI.aspx" />
     <Content Include="UI\CountryEntryUI.aspx" />
-    <Content Include="UI\ViewCountriesUI.aspx" />
+    <Content Include="UI\IndexUI.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -98,12 +263,12 @@
     <Compile Include="UI\CountryEntryUI.aspx.designer.cs">
       <DependentUpon>CountryEntryUI.aspx</DependentUpon>
     </Compile>
-    <Compile Include="UI\ViewCountriesUI.aspx.cs">
-      <DependentUpon>ViewCountriesUI.aspx</DependentUpon>
+    <Compile Include="UI\IndexUI.aspx.cs">
+      <DependentUpon>IndexUI.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="UI\ViewCountriesUI.aspx.designer.cs">
-      <DependentUpon>ViewCountriesUI.aspx</DependentUpon>
+    <Compile Include="UI\IndexUI.aspx.designer.cs">
+      <DependentUpon>IndexUI.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
