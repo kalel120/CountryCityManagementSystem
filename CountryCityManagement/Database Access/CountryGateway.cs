@@ -46,7 +46,7 @@ namespace CountryCityManagement.Database_Access {
         internal List<Country> GetAllInfo() {
             int countSl = 1;
             List<Country> countries = new List<Country>();
-            string getAllQuery = "SELECT * FROM Country";
+            string getAllQuery = "SELECT * FROM Country ORDER BY CountryName";
             SqlCommand getAllCommand = new SqlCommand(getAllQuery, connection);
 
             connection.Open();
