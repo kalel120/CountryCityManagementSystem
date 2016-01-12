@@ -7,6 +7,5 @@ namespace CountryCityManagement.Models {
         public string About { get; set; }
         public double NoOfCities { get; set; }
         public double NoOfCityDwellers { get; set; }
-
     }
 }

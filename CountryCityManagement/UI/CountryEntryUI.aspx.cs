@@ -15,10 +15,10 @@ namespace CountryCityManagement.UI {
             objCountry.CountryName = nameTextBox.Text;
             objCountry.AboutCountry = aboutTextArea.Value;
             if (objCountry.CountryName == string.Empty) {
-                messageLabel.Text = "Name Field is empty";
+                messageLabel.Text = "Name Field is Empty";
             }
             else if (double.TryParse(objCountry.CountryName, out parsedValue)) {
-                messageLabel.Text = "Invalid name input";
+                messageLabel.Text = "Invalid Name Input";
             }
             else if (objCountryManager.CheckCountryByName(objCountry.CountryName)) {
                 messageLabel.Text = "Country Name already Exists";
@@ -26,6 +26,7 @@ namespace CountryCityManagement.UI {
             else {
                 messageLabel.Text = objCountryManager.InsertCountryInfo(objCountry);
                 LoadIntoGridview();
+                ClearAllFields();
             }
         }
 
@@ -37,6 +38,11 @@ namespace CountryCityManagement.UI {
 
         protected void cancelButton_Click( object sender, EventArgs e ) {
             Response.Redirect("IndexUI.aspx");
+        }
+
+        private void ClearAllFields() {
+            nameTextBox.Text = null;
+            aboutTextArea.Value = null;
         }
     }
 }

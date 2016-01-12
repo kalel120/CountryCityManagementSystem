@@ -44,7 +44,7 @@ namespace CountryCityManagement.UI {
                 string searchName = serachTextBox.Text;
                 double parseSearch;
                 if (searchName == string.Empty) {
-                    messageLabel.Text = "Please give any City Name ";
+                    messageLabel.Text = "Please Give any City Name ";
                 }
                 else if (double.TryParse(searchName, out parseSearch)) {
                     messageLabel.Text = "Input is not Valid Format!";
@@ -59,7 +59,7 @@ namespace CountryCityManagement.UI {
                         messageLabel.Text = "Result of " + searchName;
                     }
                     else {
-                        messageLabel.Text = "No Result is found of " + searchName + "City";
+                        messageLabel.Text = "No Result is Found under " + searchName + " City";
                     }
                 }
             }
@@ -80,17 +80,14 @@ namespace CountryCityManagement.UI {
                         showInGrid(cityViewModels);
                     }
                     else {
-                        messageLabel.Text = "No result is found !!!";
-                        viewCitiesGridView.DataSource = null;
-                        viewCitiesGridView.DataBind();
-
+                        messageLabel.Text = "No Result is Found!";
+                        LoadALLCityInfo();
                     }
                 }
-
             }
 
             else {
-                messageLabel.Text = "Please Select Any Search Category !!!";
+                messageLabel.Text = "Please Select Any Search Category!";
             }
         }
 

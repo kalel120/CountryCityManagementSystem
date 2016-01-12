@@ -7,6 +7,5 @@ D:\Git_Projects\CountryCityManagement\obj\Debug\CountryCityManagement.pdb
 D:\Git_Projects\CountryCityManagementWebApp\CountryCityManagement\bin\CountryCityManagement.dll.config
 D:\Git_Projects\CountryCityManagementWebApp\CountryCityManagement\bin\CountryCityManagement.dll
 D:\Git_Projects\CountryCityManagementWebApp\CountryCityManagement\bin\CountryCityManagement.pdb
-D:\Git_Projects\CountryCityManagementWebApp\CountryCityManagement\obj\Debug\CountryCityManagementApp.csprojResolveAssemblyReference.cache
 D:\Git_Projects\CountryCityManagementWebApp\CountryCityManagement\obj\Debug\CountryCityManagement.dll
 D:\Git_Projects\CountryCityManagementWebApp\CountryCityManagement\obj\Debug\CountryCityManagement.pdb

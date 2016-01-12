@@ -1,8 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.UI;
 using System.Web.UI.WebControls;
 using CountryCityManagement.Business_Logic;
 using CountryCityManagement.Models;
@@ -65,11 +62,22 @@ namespace CountryCityManagement.UI {
                 city.CountryID = countryIDfromDropDown;
                 messageLabel.Text = manager.InsertCity(city);
                 LoadAllCities();
+                ClearAllFields();
             }
         }
 
         protected void cancelCityButton_Click( object sender, EventArgs e ) {
             Response.Redirect("IndexUI.aspx");
+        }
+
+        private void ClearAllFields() {
+            cityNameTextBox.Text = null;
+            cityNameTextBox.Text = null;
+            aboutTextArea.Value = null;
+            noOfDwellersTextBox.Text = null;
+            locationTextBox.Text = null;
+            weatherTextBox.Text = null;
+            LoadAllCountry();
         }
     }
 }

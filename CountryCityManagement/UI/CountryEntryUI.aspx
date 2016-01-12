@@ -27,7 +27,7 @@
 <body>
     <form id="CountryEntryForm" runat="server">
         <div>
-            <asp:Panel ID="inputPanel" runat="server" Style="margin-left: 0" Width="989px" Height="504px" BackColor="#FAFAE7">
+            <asp:Panel ID="inputPanel" runat="server" Style="margin-left: 0" Width="989px" Height="282px" BackColor="#FAFAE7">
                 <asp:Label ID="Label3" runat="server" Text="Country Entry" Font-Bold="True" Font-Size="Larger"></asp:Label>
                 <br />
                 &nbsp;<asp:Label ID="Label1" runat="server" Text="Name"></asp:Label>
@@ -48,39 +48,30 @@
                 <br />
                 <asp:Label ID="messageLabel" runat="server"></asp:Label>
                 <br />
+                <asp:Panel runat="server" ID="gridviewPanel">
+                    <asp:GridView ID="countryEntryGridView" runat="server" AutoGenerateColumns="False" Style="margin-left: 0; margin-top: 3px;" Height="186px" Width="768px">
+                        <Columns>
+                            <asp:TemplateField HeaderText="SL#">
+                                <ItemTemplate>
+                                    <asp:Label runat="server" Text='<%#Eval("CountrySL") %>'></asp:Label>
+                                </ItemTemplate>
+                            </asp:TemplateField>
+                            <asp:TemplateField HeaderText="Name">
+                                <ItemTemplate>
+                                    <asp:Label runat="server" Text='<%#Eval("CountryName") %>'></asp:Label>
+                                </ItemTemplate>
+                            </asp:TemplateField>
+                            <asp:TemplateField HeaderText="About">
+                                <ItemTemplate>
+                                    <asp:Label runat="server" Text='<%#Eval("AboutCountry") %>'></asp:Label>
+                                </ItemTemplate>
+                            </asp:TemplateField>
+                        </Columns>
+                    </asp:GridView>
+                </asp:Panel>
             </asp:Panel>
-        </div>
-        <asp:GridView ID="countryEntryGridView" runat="server" AutoGenerateColumns="False" Style="margin-left: 0; margin-top: 147px;" BackColor="LightGoldenrodYellow" BorderColor="Tan" BorderWidth="1px" CellPadding="2" ForeColor="Black" GridLines="None" Height="186px" Width="768px">
-            <AlternatingRowStyle BackColor="PaleGoldenrod" />
-            <Columns>
-                <asp:TemplateField HeaderText="SL#">
-                    <ItemTemplate>
-                        <asp:Label runat="server" Text='<%#Eval("CountrySL") %>'></asp:Label>
-                    </ItemTemplate>
-                </asp:TemplateField>
-                <asp:TemplateField HeaderText="Name">
-                    <ItemTemplate>
-                        <asp:Label runat="server" Text='<%#Eval("CountryName") %>'></asp:Label>
-                    </ItemTemplate>
-                </asp:TemplateField>
-                <asp:TemplateField HeaderText="About">
-                    <ItemTemplate>
-                        <asp:Label runat="server" Text='<%#Eval("AboutCountry") %>'></asp:Label>
-                    </ItemTemplate>
-                </asp:TemplateField>
-            </Columns>
-            <FooterStyle BackColor="Tan" />
-            <HeaderStyle BackColor="Tan" Font-Bold="True" />
-            <PagerStyle BackColor="PaleGoldenrod" ForeColor="DarkSlateBlue" HorizontalAlign="Center" />
-            <SelectedRowStyle BackColor="DarkSlateBlue" ForeColor="GhostWhite" />
-            <SortedAscendingCellStyle BackColor="#FAFAE7" />
-            <SortedAscendingHeaderStyle BackColor="#DAC09E" />
-            <SortedDescendingCellStyle BackColor="#E1DB9C" />
-            <SortedDescendingHeaderStyle BackColor="#C2A47B" />
-        </asp:GridView>
 
-        <br />
-        <br />
+        </div>
         &nbsp;
 
         <!-- Include jQuery. -->
