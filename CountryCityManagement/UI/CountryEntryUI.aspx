@@ -49,7 +49,7 @@
                 <asp:Label ID="messageLabel" runat="server"></asp:Label>
                 <br />
                 <asp:Panel runat="server" ID="gridviewPanel">
-                    <asp:GridView ID="countryEntryGridView" runat="server" AutoGenerateColumns="False" Style="margin-left: 0; margin-top: 3px;" Height="186px" Width="768px">
+                    <asp:GridView ID="countryEntryGridView" runat="server" AutoGenerateColumns="False" Style="margin-left: 0; margin-top: 37px;" Height="227px" Width="768px">
                         <Columns>
                             <asp:TemplateField HeaderText="SL#">
                                 <ItemTemplate>
