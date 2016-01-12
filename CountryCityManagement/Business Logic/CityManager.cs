@@ -29,5 +29,21 @@ namespace CountryCityManagement.Business_Logic {
             }
             return "Insertion Failed!";
         }
+        ////////////////////////
+        CityGateway cityGatewayObj = new CityGateway();
+        public List<CityViewModel> GetALLCityInfo() {
+            List<CityViewModel> cityView = cityGatewayObj.GetAllCityInfo();
+            return cityView;
+        }
+
+        public List<CityViewModel> GetALLCityInfoByName( string searchName ) {
+            List<CityViewModel> cityView = cityGatewayObj.GetAllCityInfoByName(searchName);
+            return cityView;
+        }
+
+        public List<CityViewModel> GetALLCityInfoByCountry( string searchCountry ) {
+            List<CityViewModel> cityView = cityGatewayObj.GetAllCityInfoByCountry(searchCountry);
+            return cityView;
+        }
     }
 }

@@ -1,7 +1,7 @@
-﻿namespace CountryCityManagement.Models
-{
-    public class CountryViewModel
-    {
+﻿using System;
+namespace CountryCityManagement.Models {
+    [Serializable]
+    public class CountryViewModel {
         public int SL { get; set; }
         public string Name { get; set; }
         public string About { get; set; }

@@ -24,5 +24,21 @@ namespace CountryCityManagement.Business_Logic {
             List<Country> countries = objCountryGateway.GetAllInfo();
             return countries;
         }
+        //////////////////////
+        CountryGateway countryGatewayObj = new CountryGateway();
+        public List<CountryViewModel> GetALLCountryView() {
+            List<CountryViewModel> countryView = countryGatewayObj.GetALLCountryView();
+            return countryView;
+        }
+
+        public List<CountryViewModel> GetALLCountryViewByName( string searchName ) {
+            List<CountryViewModel> countryView = countryGatewayObj.GetALLCountryViewByName(searchName);
+            return countryView;
+        }
+
+        public List<Country> GetAllDepartment() {
+            List<Country> countryList = countryGatewayObj.GetAllCounty();
+            return countryList;
+        }
     }
 }

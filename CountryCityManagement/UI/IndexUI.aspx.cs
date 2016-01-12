@@ -6,11 +6,11 @@ namespace CountryCityManagement.UI {
         }
 
         protected void viewCountriesLinkButton_Click( object sender, EventArgs e ) {
-            //Response.Redirect("ViewCountryUI.aspx");
+            Response.Redirect("ViewCountryUI.aspx");
         }
 
         protected void viewCitiesLinkButton_Click( object sender, EventArgs e ) {
-            //Response.Redirect("ViewCitiesUI.aspx");
+            Response.Redirect("ViewCitiesUI.aspx");
         }
 
         protected void countryEntryLinkButton_Click( object sender, EventArgs e ) {

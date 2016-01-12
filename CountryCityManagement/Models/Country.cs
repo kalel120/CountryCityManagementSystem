@@ -1,5 +1,6 @@
 ﻿namespace CountryCityManagement.Models
 {
+    
     public class Country
     {
         public int CountrySL { get; set; }

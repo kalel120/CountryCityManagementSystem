@@ -234,6 +234,8 @@
     <Content Include="UI\CityEntryUI.aspx" />
     <Content Include="UI\CountryEntryUI.aspx" />
     <Content Include="UI\IndexUI.aspx" />
+    <Content Include="UI\ViewCitiesUI.aspx" />
+    <Content Include="UI\ViewCountryUI.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -269,6 +271,20 @@
     </Compile>
     <Compile Include="UI\IndexUI.aspx.designer.cs">
       <DependentUpon>IndexUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ViewCitiesUI.aspx.cs">
+      <DependentUpon>ViewCitiesUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\ViewCitiesUI.aspx.designer.cs">
+      <DependentUpon>ViewCitiesUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ViewCountryUI.aspx.cs">
+      <DependentUpon>ViewCountryUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\ViewCountryUI.aspx.designer.cs">
+      <DependentUpon>ViewCountryUI.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
