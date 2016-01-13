@@ -25,35 +25,35 @@
     <link rel="stylesheet" href="../froala_editor_2.0.5/css/plugins/video.css" />
     <!--Floala editors is done.-->
     <link href="../FrontEnd/css/CountryEntryStyle.css" rel="stylesheet" />
+    <style type="text/css">
+        #gridviewClass {
+            margin-left: 1px;
+        }
+    </style>
 </head>
 <body runat="server">
     <form id="CountryEntryForm" runat="server">
-        <div class="panel-default" runat="server">
+        <div class="wrapper" runat="server">
             <asp:Panel ID="inputPanel" runat="server">
-                <asp:Label ID="Label3" runat="server" Text="Country Entry" Font-Bold="True" Font-Size="Larger"></asp:Label>
+                <div class="nameInput">
+                    <asp:Label ID="Label1" runat="server" Text="Name" Font-Bold="True" Font-Size="Large"></asp:Label>
+                    <asp:TextBox ID="nameTextBox" runat="server"></asp:TextBox>
+                </div>
                 <br />
-                &nbsp;<asp:Label ID="Label1" runat="server" Text="Name"></asp:Label>
-                <br />
-                <asp:TextBox ID="nameTextBox" runat="server"></asp:TextBox>
-                <br />
-                <br />
-                <asp:Label ID="Label2" runat="server" Text="About"></asp:Label>
-                <br />
-                <textarea id="aboutTextArea" runat="server" cols="20" name="S1" rows="2"> </textarea><br />
-                <br />
-                <br />
-                <asp:Button ID="saveButton" runat="server" Text="Save" OnClick="saveButton_Click" Width="60px" />
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-               
-                <asp:Button ID="cancelButton" runat="server" Text="Cancel" OnClick="cancelButton_Click" />
+                <div class="rich">
+                    <asp:Label ID="Label2" runat="server" Text="About" Font-Bold="True" Font-Size="Large"></asp:Label>
+                    <textarea id="aboutTextArea" runat="server"> </textarea>
+                </div>
                 <br />
                 <br />
+                <asp:Button ID="saveButton" runat="server" Text="Save" OnClick="saveButton_Click" Width="60px" Font-Size="Medium" />
+                <asp:Button ID="cancelButton" runat="server" Text="Cancel" OnClick="cancelButton_Click" Font-Size="Medium" />
                 <br />
                 <asp:Label ID="messageLabel" runat="server"></asp:Label>
                 <br />
                 <asp:Panel runat="server" ID="gridviewPanel">
-                    <div id="scrollable">
-                        <asp:GridView ID="countryEntryGridView" runat="server" AutoGenerateColumns="False" Style="margin-left: 0; margin-top: 50px;" Height="186px" Width="900px" BackColor="White" BorderColor="#336666" BorderStyle="Double" BorderWidth="3px" CellPadding="4" GridLines="Horizontal">
+                    <div id="gridviewClass">
+                        <asp:GridView ID="countryEntryGridView" runat="server" AutoGenerateColumns="False" Style="margin-left: 0; margin-top: 50px; top: 0px; width: 761px;" Height="186px" BackColor="White" BorderColor="#336666" BorderStyle="Double" BorderWidth="3px" CellPadding="4" GridLines="Horizontal">
                             <Columns>
                                 <asp:TemplateField HeaderText="SL#">
                                     <ItemTemplate>
@@ -84,7 +84,6 @@
                     </div>
                 </asp:Panel>
             </asp:Panel>
-
         </div>
 
         <!-- Include jQuery. -->

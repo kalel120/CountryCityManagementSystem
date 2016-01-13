@@ -1,14 +1,52 @@
-﻿#scrollable {
-    max-height: 600px;
-    overflow-y: scroll;
+﻿.wrapper {
+    width: 960px;
 }
+
 body {
     background-image: url('../images/country_view.jpg');
-  
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
+}
+
+#inputPanel {
+    position: relative;
+    left: auto;
+    right: auto;
+}
+
+#aboutTextArea {
+    position: relative;
+    left: 300px;
+}
+
+.rich {
+    position: relative;
+    left: 200px;
+}
+
+.nameInput {
+    position: relative;
+    left: 200px;
+}
+
+#saveButton {
+    position: relative;
+    left: 200px;
+}
+
+#cancelButton {
+    position: relative;
+    left: 200px;
+}
+
+#countryEntryGridView {
+    position: relative;
+    left: 200px;
+    margin: 0 0 0 0;
+    height: auto;
+    width: auto;
 }

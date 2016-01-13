@@ -243,8 +243,6 @@
     <Content Include="FrontEnd\css\style.css" />
     <Content Include="FrontEnd\css\techandallthemes.webflow.css" />
     <Content Include="FrontEnd\css\webflow.css" />
-    <Content Include="FrontEnd\images\back.jpg" />
-    <Content Include="FrontEnd\images\background.jpg" />
     <Content Include="FrontEnd\images\bg.jpg" />
     <Content Include="FrontEnd\images\bg2.jpg" />
     <Content Include="FrontEnd\images\city_insert.jpg" />

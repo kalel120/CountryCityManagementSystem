@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="CityEntryUI.aspx.cs" Inherits="CountryCityManagement.UI.CityEntryUI" ValidateRequest="false"%>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="CityEntryUI.aspx.cs" Inherits="CountryCityManagement.UI.CityEntryUI" ValidateRequest="false" %>
 
 <!DOCTYPE html>
 
@@ -27,86 +27,81 @@
 </head>
 <body>
     <form id="form1" runat="server">
-    <div style="height: 661px">
-    
-        <asp:Panel ID="Panel1" runat="server" Height="330px">
-            City Entry<br />
-            <br />
-            <asp:Label ID="Label1" runat="server" Text="Name"></asp:Label>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <asp:TextBox ID="cityNameTextBox" runat="server"></asp:TextBox>
-            <br />
-            <asp:Label ID="Label2" runat="server" Text="About"></asp:Label>
-            &nbsp;
-            <textarea id="aboutTextArea" runat="server" name="S1" rows="2">
-                
-            </textarea><br />
-            <asp:Label ID="Label3" runat="server" Text="No. of Dwellers"></asp:Label>
-            <asp:TextBox ID="noOfDwellersTextBox" runat="server" style="margin-left: 47px"></asp:TextBox>
-            <br />
-            <br />
-            <asp:Label ID="Label4" runat="server" Text="Location"></asp:Label>
-            &nbsp;&nbsp;&nbsp;
-            <asp:TextBox ID="locationTextBox" runat="server" style="margin-left: 75px"></asp:TextBox>
-            <br />
-            <br />
-            <asp:Label ID="Label5" runat="server" Text="Weather"></asp:Label>
-            &nbsp;
-            <asp:TextBox ID="weatherTextBox" runat="server" style="margin-left: 84px"></asp:TextBox>
-            <br />
-            <br />
-            <asp:Label ID="Label6" runat="server" Text="CountryName"></asp:Label>
-            <asp:DropDownList ID="cityCountryDropDownList" runat="server" Height="27px" style="margin-left: 60px" Width="127px">
-            </asp:DropDownList>
-            <br />
-            <br />
-            &nbsp;&nbsp;
-            <asp:Button ID="saveCityButton" runat="server" Text="Save" Width="70px" OnClick="saveCityButton_Click" />
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <asp:Button ID="cancelCityButton" runat="server" Text="Cancel" OnClick="cancelCityButton_Click" />
-            <br />
-            <br />
-            <asp:Label ID="messageLabel" runat="server"></asp:Label>
-            <br />
-            <asp:Panel ID="Panel2" runat="server" Height="181px">
-                <asp:GridView ID="cityGridView" runat="server" AutoGenerateColumns="False" Height="33px" Width="593px" BackColor="White" BorderColor="#336666" BorderStyle="Double" BorderWidth="3px" CellPadding="4" GridLines="Horizontal">
-                     <Columns>
-                         <asp:TemplateField HeaderText="SL#">
-                        <ItemTemplate>
-                            <asp:Label runat="server" Text='<%#Eval("CitySL")%>'></asp:Label>
-                        </ItemTemplate>
-                    </asp:TemplateField>
-                        <asp:TemplateField HeaderText="Name">
-                            <ItemTemplate>
-                                <asp:Label runat="server" Text='<%#Eval("CityName")%>'></asp:Label>
-                            </ItemTemplate>
-                        </asp:TemplateField>
-                        <asp:TemplateField HeaderText="No. of Dwellers">
-                            <ItemTemplate>
-                                <asp:Label runat="server" Text='<%#Eval("Dwellers")%>'></asp:Label>
-                            </ItemTemplate>
-                        </asp:TemplateField>
-                        <asp:TemplateField HeaderText="Country Name">
-                            <ItemTemplate>
-                                <asp:Label runat="server" Text='<%#Eval("CountryName")%>'></asp:Label>
-                            </ItemTemplate>
-                        </asp:TemplateField>                     
-                    </Columns>
-                     <FooterStyle BackColor="White" ForeColor="#333333" />
-                     <HeaderStyle BackColor="#336666" Font-Bold="True" ForeColor="White" />
-                     <PagerStyle BackColor="#336666" ForeColor="White" HorizontalAlign="Center" />
-                     <RowStyle BackColor="White" ForeColor="#333333" />
-                     <SelectedRowStyle BackColor="#339966" Font-Bold="True" ForeColor="White" />
-                     <SortedAscendingCellStyle BackColor="#F7F7F7" />
-                     <SortedAscendingHeaderStyle BackColor="#487575" />
-                     <SortedDescendingCellStyle BackColor="#E5E5E5" />
-                     <SortedDescendingHeaderStyle BackColor="#275353" />
-                </asp:GridView>
+        <div class="wrapper">
+            <asp:Panel ID="Panel1" runat="server" Height="330px">
+                <asp:Label ID="Label1" runat="server" Text="Name" Font-Bold="True" Font-Size="Large"></asp:Label>
+
+                <asp:TextBox ID="cityNameTextBox" runat="server"></asp:TextBox>
+                <br />
+                <asp:Label ID="Label2" runat="server" Text="About" Font-Bold="True" Font-Size="Large"></asp:Label>
+
+                <textarea id="aboutTextArea" runat="server" name="S1" rows="2"> </textarea>
+                <br />
+                <asp:Label ID="Label3" runat="server" Text="No. of Dwellers" Font-Bold="True" Font-Size="Large"></asp:Label>
+                <asp:TextBox ID="noOfDwellersTextBox" runat="server" Style="margin-left: 47px"></asp:TextBox>
+                <br />
+                <br />
+                <asp:Label ID="Label4" runat="server" Text="Location" Font-Bold="True" Font-Size="Large"></asp:Label>
+
+                <asp:TextBox ID="locationTextBox" runat="server" Style="margin-left: 75px"></asp:TextBox>
+                <br />
+                <br />
+                <asp:Label ID="Label5" runat="server" Text="Weather" Font-Bold="True" Font-Size="Large"></asp:Label>
+
+                <asp:TextBox ID="weatherTextBox" runat="server" Style="margin-left: 84px"></asp:TextBox>
+                <br />
+                <br />
+                <asp:Label ID="Label6" runat="server" Text="CountryName" Font-Bold="True" Font-Size="Large"></asp:Label>
+                <asp:DropDownList ID="cityCountryDropDownList" runat="server" Height="27px" Style="margin-left: 60px" Width="127px">
+                </asp:DropDownList>
+                <br />
+                <br />
+                <asp:Button ID="saveCityButton" runat="server" Text="Save" Width="70px" OnClick="saveCityButton_Click" Font-Size="Medium" />
+                <asp:Button ID="cancelCityButton" runat="server" Text="Cancel" OnClick="cancelCityButton_Click" Font-Size="Medium" />
+                <br />
+                <br />
+                <asp:Label ID="messageLabel" runat="server"></asp:Label>
+                <br />
+                <div class="gridviewClass">
+                    <asp:Panel ID="Panel2" runat="server" Height="181px">
+                        <asp:GridView ID="cityGridView" runat="server" AutoGenerateColumns="False" Height="33px" Width="593px" BackColor="White" BorderColor="#336666" BorderStyle="Double" BorderWidth="3px" CellPadding="4" GridLines="Horizontal">
+                            <Columns>
+                                <asp:TemplateField HeaderText="SL#">
+                                    <ItemTemplate>
+                                        <asp:Label runat="server" Text='<%#Eval("CitySL")%>'></asp:Label>
+                                    </ItemTemplate>
+                                </asp:TemplateField>
+                                <asp:TemplateField HeaderText="Name">
+                                    <ItemTemplate>
+                                        <asp:Label runat="server" Text='<%#Eval("CityName")%>'></asp:Label>
+                                    </ItemTemplate>
+                                </asp:TemplateField>
+                                <asp:TemplateField HeaderText="No. of Dwellers">
+                                    <ItemTemplate>
+                                        <asp:Label runat="server" Text='<%#Eval("Dwellers")%>'></asp:Label>
+                                    </ItemTemplate>
+                                </asp:TemplateField>
+                                <asp:TemplateField HeaderText="Country Name">
+                                    <ItemTemplate>
+                                        <asp:Label runat="server" Text='<%#Eval("CountryName")%>'></asp:Label>
+                                    </ItemTemplate>
+                                </asp:TemplateField>
+                            </Columns>
+                            <FooterStyle BackColor="White" ForeColor="#333333" />
+                            <HeaderStyle BackColor="#336666" Font-Bold="True" ForeColor="White" />
+                            <PagerStyle BackColor="#336666" ForeColor="White" HorizontalAlign="Center" />
+                            <RowStyle BackColor="White" ForeColor="#333333" />
+                            <SelectedRowStyle BackColor="#339966" Font-Bold="True" ForeColor="White" />
+                            <SortedAscendingCellStyle BackColor="#F7F7F7" />
+                            <SortedAscendingHeaderStyle BackColor="#487575" />
+                            <SortedDescendingCellStyle BackColor="#E5E5E5" />
+                            <SortedDescendingHeaderStyle BackColor="#275353" />
+                        </asp:GridView>
+                    </asp:Panel>
+                </div>
             </asp:Panel>
-        </asp:Panel>
-    
-    </div>
-         <!-- Include jQuery. -->
+        </div>
+        <!-- Include jQuery. -->
         <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
         <!-- Include JS files. -->
         <script src="../froala_editor_2.0.5/js/froala_editor.min.js"></script>

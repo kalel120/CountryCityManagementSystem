@@ -1,13 +1,44 @@
 ﻿body {
-    background-image: url("../../FrontEnd/images/city_insert.jpg");
-    padding-left: 0px;
-    padding-bottom: 517px;
-    width: 100%;
-    height: 100%;
+    background-image: url('../images/city_insert.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
-    -o-background-size: cover;
     background-size: cover;
-    background-position: 0% 0%;
-    background-attachment: fixed;
+}
+
+.wrapper {
+    width: 960px;
+    margin: 0 auto;
+}
+
+#cityNameTextBox {
+    position: relative;
+    left: 200px;
+}
+
+#noOfDwellersTextBox {
+    position: relative;
+    left: 86px;
+}
+
+#locationTextBox {
+    position: relative;
+    left: 107px;
+}
+
+#weatherTextBox {
+    position: relative;
+    left: 101px;
+}
+
+#cityCountryDropDownList {
+    position: relative;
+    left: 82px;
+}
+.gridviewClass {
+    margin: 0 0 0 0;
+    height: auto;
+    width: auto;
 }
