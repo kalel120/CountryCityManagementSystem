@@ -61,6 +61,7 @@
     <Content Include="froala_editor_2.0.5\html\file_s3_upload.php" />
     <Content Include="froala_editor_2.0.5\html\image_s3_upload.php" />
     <Content Include="froala_editor_2.0.5\package.json" />
+    <Content Include="FrontEnd\css\CountryEntryStyle.css" />
     <Content Include="FrontEnd\images\logo.psd" />
     <Content Include="FrontEnd\images\Thumbs.db" />
     <Content Include="FrontEnd\images\title.psd" />
@@ -234,7 +235,6 @@
     <Content Include="froala_editor_2.0.5\js\plugins\url.min.js" />
     <Content Include="froala_editor_2.0.5\js\plugins\video.min.js" />
     <Content Include="FrontEnd\css\component.css" />
-    <Content Include="FrontEnd\css\default.css" />
     <Content Include="FrontEnd\css\navcss.css" />
     <Content Include="FrontEnd\css\normalize.css" />
     <Content Include="FrontEnd\css\style.css" />

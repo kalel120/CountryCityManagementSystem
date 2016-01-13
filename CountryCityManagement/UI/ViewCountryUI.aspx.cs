@@ -45,10 +45,10 @@ namespace CountryCityManagement.UI {
                     clearSearBox();
                 }
                 else {
-                    messageLabel.Text = "Nothin is found for " + searchName + " Country";
+                    messageLabel.Text = "No Result is Found under " + searchName + " Name";
                     clearSearBox();
-                    countryGridView.DataSource = null;
-                    countryGridView.DataBind();
+                    //countryGridView.DataSource = null;
+                    //countryGridView.DataBind();
                 }
             }
         }

@@ -4,7 +4,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title>Country & City Information</title>
+    <title>Country & City Information Management System</title>
     <meta name="description" content=" Free theme by TechAndAll.com" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="../FrontEnd/css/webflow.css" />
