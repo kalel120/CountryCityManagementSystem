@@ -28,7 +28,7 @@
                 <asp:Button ID="homeButton" runat="server" OnClick="homeButton_Click1" Text="Cancel" />
             </asp:Panel>
             <br />
-            <asp:Label ID="messageLabel" runat="server" Font-Bold="True" Font-Size="Large" BackColor="#3399FF"></asp:Label>
+            <asp:Label ID="messageLabel" runat="server" Font-Bold="True" Font-Size="Larger" BackColor="#3399FF"></asp:Label>
             <br />
             <br />
             <div class="gridviewClass">

@@ -60,7 +60,7 @@
                 <asp:Button ID="cancelCityButton" runat="server" Text="Cancel" OnClick="cancelCityButton_Click" Font-Size="Medium" />
                 <br />
                 <br />
-                <asp:Label ID="messageLabel" runat="server"></asp:Label>
+                <asp:Label ID="messageLabel" runat="server" Font-Bold="True" Font-Size="Larger"></asp:Label>
                 <br />
                 <div class="gridviewClass">
                     <asp:Panel ID="Panel2" runat="server" Height="181px">

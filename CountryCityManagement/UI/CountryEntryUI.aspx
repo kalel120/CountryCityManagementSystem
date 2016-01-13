@@ -34,7 +34,7 @@
 <body runat="server">
     <form id="CountryEntryForm" runat="server">
         <div class="wrapper" runat="server">
-            <asp:Panel ID="inputPanel" runat="server">
+            <asp:Panel ID="inputPanel" runat="server" ForeColor="Black">
                 <div class="nameInput">
                     <asp:Label ID="Label1" runat="server" Text="Name" Font-Bold="True" Font-Size="Large"></asp:Label>
                     <asp:TextBox ID="nameTextBox" runat="server"></asp:TextBox>
@@ -49,7 +49,9 @@
                 <asp:Button ID="saveButton" runat="server" Text="Save" OnClick="saveButton_Click" Width="60px" Font-Size="Medium" />
                 <asp:Button ID="cancelButton" runat="server" Text="Cancel" OnClick="cancelButton_Click" Font-Size="Medium" />
                 <br />
-                <asp:Label ID="messageLabel" runat="server"></asp:Label>
+                <br/>
+                <br/>
+                <asp:Label ID="messageLabel" runat="server" Font-Bold="True" Font-Size="Larger"></asp:Label>
                 <br />
                 <asp:Panel runat="server" ID="gridviewPanel">
                     <div id="gridviewClass">

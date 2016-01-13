@@ -38,7 +38,7 @@
             </div>
             <br />
             <br />
-            <asp:Label ID="messageLabel" runat="server" BackColor="#FFA851" Font-Size="Large"></asp:Label>
+            <asp:Label ID="messageLabel" runat="server" BackColor="#FFA851" Font-Size="Larger" Font-Bold="True"></asp:Label>
             <br />
             <div class="gridviewClass">
                 <asp:GridView ID="countryGridView" runat="server" AutoGenerateColumns="False" Style="margin-left: 0px; margin-top: 20px" Width="597px" AllowPaging="True" PageSize="2" OnPageIndexChanging="countryGridView_PageIndexChanging" Height="143px" BackColor="LightGoldenrodYellow" BorderColor="Tan" BorderWidth="1px" CellPadding="2" ForeColor="Black" GridLines="None">

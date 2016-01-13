@@ -28,7 +28,7 @@ namespace CountryCityManagement.UI {
             string searchName = countrySearchTextBox.Text;
             double parseNumber;
             if (searchName == string.Empty) {
-                messageLabel.Text = "Please Give Country Name";
+                messageLabel.Text = " Give Country Name";
             }
             else if (double.TryParse(searchName, out parseNumber)) {
                 messageLabel.Text = "Input is not Valid !";

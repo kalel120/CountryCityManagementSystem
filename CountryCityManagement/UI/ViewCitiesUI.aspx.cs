@@ -56,7 +56,7 @@ namespace CountryCityManagement.UI
                 double parseSearch;
                 if (searchName == string.Empty)
                 {
-                    messageLabel.Text = "Please Give any City Name ";
+                    messageLabel.Text = " Give any City Name ";
                 }
                 else if (double.TryParse(searchName, out parseSearch))
                 {
@@ -86,7 +86,7 @@ namespace CountryCityManagement.UI
 
                 if (countryDropDownList.SelectedItem.Text == "Select Country")
                 {
-                    messageLabel.Text = "Please Select any County";
+                    messageLabel.Text = " Select any County";
                     LoadCountry();
                 }
                 else
