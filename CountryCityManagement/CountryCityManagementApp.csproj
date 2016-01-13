@@ -61,6 +61,7 @@
     <Content Include="froala_editor_2.0.5\html\file_s3_upload.php" />
     <Content Include="froala_editor_2.0.5\html\image_s3_upload.php" />
     <Content Include="froala_editor_2.0.5\package.json" />
+    <Content Include="FrontEnd\css\CityEntryStyle.css" />
     <Content Include="FrontEnd\css\CountryEntryStyle.css" />
     <Content Include="FrontEnd\css\viewCitiesStyle.css" />
     <Content Include="FrontEnd\css\viewCountryStyle.css" />
@@ -242,12 +243,6 @@
     <Content Include="FrontEnd\css\style.css" />
     <Content Include="FrontEnd\css\techandallthemes.webflow.css" />
     <Content Include="FrontEnd\css\webflow.css" />
-    <Content Include="FrontEnd\images\1.jpg" />
-    <Content Include="FrontEnd\images\2.jpg" />
-    <Content Include="FrontEnd\images\3.jpg" />
-    <Content Include="FrontEnd\images\4.jpg" />
-    <Content Include="FrontEnd\images\5.jpg" />
-    <Content Include="FrontEnd\images\6.jpg" />
     <Content Include="FrontEnd\images\back.jpg" />
     <Content Include="FrontEnd\images\background.jpg" />
     <Content Include="FrontEnd\images\bg.jpg" />
@@ -264,6 +259,7 @@
     <Content Include="FrontEnd\images\view_city.jpg" />
     <Content Include="FrontEnd\images\whitelogo.png" />
     <Content Include="FrontEnd\images\wire_idevices.png" />
+    <Content Include="FrontEnd\images\world-physical-map.jpg" />
     <Content Include="FrontEnd\js\borderMenu.js" />
     <Content Include="FrontEnd\js\classie.js" />
     <Content Include="FrontEnd\js\index.js" />

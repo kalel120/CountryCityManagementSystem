@@ -38,7 +38,7 @@
     </nav>
     <div class="hero-image">
         <div class="header-wrapper">
-            <h1>Country City Informaton Web Portal</h1>
+            <h1>Country & City Informaton Management System</h1>
         </div>
         <br />
         <br />
@@ -60,7 +60,7 @@
                 <div class="w-col w-col-4 w-clearfix">
                     <img class="feature-image" src="../FrontEnd/images/icon3.png" alt="newthemes.png" />
                     <div class="features-header">Share amazing experiences</div>
-                    <p class="feature-p">Visited New Countries and Cities? Please share your thought</p>
+                    <p class="feature-p">Visited New Countries and Cities?</p>
                 </div>
             </div>
         </div>

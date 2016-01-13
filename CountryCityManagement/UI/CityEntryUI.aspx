@@ -23,7 +23,7 @@
     <link rel="stylesheet" href="../froala_editor_2.0.5/css/plugins/line_breaker.css" />
     <link rel="stylesheet" href="../froala_editor_2.0.5/css/plugins/table.css" />
     <link rel="stylesheet" href="../froala_editor_2.0.5/css/plugins/video.css" />
-    
+    <link href="../FrontEnd/css/CityEntryStyle.css" rel="stylesheet" />
 </head>
 <body>
     <form id="form1" runat="server">

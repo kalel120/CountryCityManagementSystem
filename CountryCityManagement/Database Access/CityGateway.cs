@@ -72,6 +72,7 @@ namespace CountryCityManagement.Database_Access {
         }
 
         public int InsertCity( City city ) {
+            connection.Close();
             string insertQuery = "INSERT INTO  City VALUES(@name, CONVERT(varbinary(MAX),'" + city.AboutCity + "'),@dwellers,@location,@weather,@countryId)";
             SqlCommand insertCommand = new SqlCommand(insertQuery, connection);
             connection.Open();
