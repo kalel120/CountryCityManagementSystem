@@ -5,15 +5,6 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title>City Entry</title>
-      <style>
-        body {
-            background-image: url("../FrontEnd/images/city_insert.jpg");
-            background-position: 0% 0%;
-            background-size: 1500px;
-            background-attachment: fixed;
-}
-        
-    </style>
     <meta charset="utf-8" />
     <!-- Include Font Awesome. -->
     <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
@@ -32,11 +23,7 @@
     <link rel="stylesheet" href="../froala_editor_2.0.5/css/plugins/line_breaker.css" />
     <link rel="stylesheet" href="../froala_editor_2.0.5/css/plugins/table.css" />
     <link rel="stylesheet" href="../froala_editor_2.0.5/css/plugins/video.css" />
-    <style type="text/css">
-        #aboutTextArea {
-            width: 181px;
-        }
-    </style>
+    
 </head>
 <body>
     <form id="form1" runat="server">

@@ -1,0 +1,56 @@
+﻿body {
+    background-image: url('../images/country_2.jpg');
+    
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+}
+
+.wrapper {
+    width: 960px;
+    margin: 0 auto;
+}
+
+#searchButton {
+    clear: both;
+    float: right;
+    height: 32px;
+    border: solid 1px;
+    margin-right: 15px;
+    position: relative;
+    top: -35px;
+}
+
+#homeButton {
+    clear: both;
+    float: right;
+    height: 33px;
+    width: 134px;
+    border: solid 1px;
+    margin-right: 15px;
+}
+
+.nameInput {
+    position: relative;
+    top: 10px;
+    margin-left: 150px;
+    width: 188px;
+}
+
+#Label2 {
+    margin: 5px;
+}
+
+#Label3 {
+    margin: 10px;
+    clear: both;
+    float: left;
+}
+.gridviewClass {
+    margin: 0 0 0 0;
+    width: auto;
+    height: auto;
+}
