@@ -9,3 +9,4 @@ D:\Git_Projects\CountryCityManagementWebApp\CountryCityManagement\bin\CountryCit
 D:\Git_Projects\CountryCityManagementWebApp\CountryCityManagement\bin\CountryCityManagement.pdb
 D:\Git_Projects\CountryCityManagementWebApp\CountryCityManagement\obj\Debug\CountryCityManagement.dll
 D:\Git_Projects\CountryCityManagementWebApp\CountryCityManagement\obj\Debug\CountryCityManagement.pdb
+D:\Git_Projects\CountryCityManagementWebApp\CountryCityManagement\obj\Debug\CountryCityManagementApp.csprojResolveAssemblyReference.cache

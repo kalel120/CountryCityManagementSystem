@@ -1,0 +1,613 @@
+body {
+    margin: 0;
+    padding-top: 0;
+    background-color: white;
+    box-shadow: none;
+    -webkit-transition: none;
+    -o-transition: none;
+    transition: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+    font-size: 12px;
+    line-height: 20px;
+}
+
+h1 {
+    margin: 0px;
+    padding-bottom: 0px;
+    color: white;
+    font-size: 23px;
+    line-height: 44px;
+    font-weight: 400;
+    text-align: center;
+    letter-spacing: 10px;
+    text-indent: 0px;
+    text-transform: uppercase;
+}
+
+h2 {
+    margin: 10px 0px;
+    font-size: 32px;
+    line-height: 36px;
+    font-weight: 700;
+}
+
+h3 {
+    margin: 10px 0px;
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 700;
+}
+
+h4 {
+    margin: 10px 0px;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 700;
+}
+
+h5 {
+    margin: 10px 0px;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 700;
+}
+
+h6 {
+    margin: 10px 0px;
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 700;
+}
+
+p {
+    margin-bottom: 5px;
+    padding-top: 0px;
+    padding-bottom: 150px;
+    padding-left: 50px;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: #898989;
+    font-style: normal;
+    text-align: left;
+}
+
+.button {
+    display: inline-block;
+    padding: 4px 15px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+
+.header-wrapper {
+    /*display: block;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: rgba(0, 0, 0, 0);
+  
+  color: rgba(0, 0, 0, 0);*/
+    padding-bottom: 1px;
+    padding-left: 0px;
+    font-family: Algerian, serif;
+    color: cornsilk;
+    font-style: inherit;
+    font-weight: 400;
+    text-align: center;
+    font-size: 20px;
+}
+.header-wrapper h1 {
+    margin: 0px;
+}
+
+.header {
+    text-align: center;
+}
+
+.logo {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 0px;
+    float: none;
+}
+
+.hero-image {
+    padding-left: 0px;
+    padding-bottom: 517px;
+    background-color: black;
+    background-image: url(../images/country.jpg);
+    background-position: 0% 0%;
+    /*background-size: 1900px;*/
+    width: 100%;
+    height: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat no-repeat;
+    background-attachment: scroll;
+}
+
+.hero-text {
+    padding-top: 20px;
+    padding-bottom: 0px;
+    font-family: Montserrat, sans-serif;
+}
+
+.features {
+    margin-right: 0px;
+    margin-left: 0px;
+    padding: 50px 40px;
+}
+
+.features-wrapper {
+    background-color: white;
+}
+
+.feature-p {
+    margin-bottom: 0px;
+    padding: 10px 20px 0px 60px;
+    font-size: 13px;
+}
+
+.features-box {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.features-header {
+    padding-left: 60px;
+    font-family: Montserrat, sans-serif;
+    color: #252525;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.hero-description {
+    padding-bottom: 1px;
+    padding-left: 0px;
+    font-family: Arial, serif;
+    color: darkgray;
+    font-style:normal;
+    font-weight: 600;
+    text-align: center;
+    font-size: 30px;
+}
+
+.feature-image {
+    float: left;
+    font-size: 13px;
+}
+
+.themes-wrapper {
+    padding-top: 70px;
+    padding-bottom: 70px;
+    background-color: #f2f2f2;
+    background-image: none;
+}
+
+.themes-container {
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+.themes-header {
+    margin-top: 0px;
+    padding-top: 0px;
+    padding-bottom: 10px;
+    font-family: Montserrat, sans-serif;
+    color: #232327;
+    font-size: 18px;
+    line-height: 18px;
+    letter-spacing: 2px;
+}
+
+.last-feature {
+    padding-right: 0px;
+    padding-left: 23px;
+}
+
+.first-feature-box {
+    padding-left: 0px;
+}
+
+.theme-left {
+    padding-left: 0px;
+}
+
+.theme-thumbnail {
+    display: block;
+    width: 290px;
+    margin-right: auto;
+    margin-left: auto;
+    border: 3px solid #e8e8e8;
+}
+
+.theme-text-link {
+    padding-top: 10px;
+    font-family: Montserrat, sans-serif;
+    color: #252525;
+    font-weight: 400;
+    text-align: center;
+    letter-spacing: 1px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.themes {
+    margin-right: 0px;
+    margin-bottom: 20px;
+    margin-left: 0px;
+    padding-top: 20px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.theme-center {
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+.theme-right {
+    padding-right: 0px;
+    text-align: right;
+}
+
+.container {
+    box-shadow: #b8b8b8 0px 0px 5px 0px;
+}
+
+.keyfeatures {
+    padding: 60px 0px;
+    background-color: white;
+}
+
+.keyfeature-blocks {
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+.center-block {
+    margin-bottom: 0px;
+    padding: 10px 20px 0px 60px;
+    font-size: 13px;
+}
+
+.nav {
+    padding-left: 25px;
+    float: right;
+    background-color: rgba(0, 0, 0, 0);
+    opacity: 1;
+    font-family: Montserrat, sans-serif;
+    color: white;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.navigation {
+    padding-top: 45px;
+    padding-right: 100px;
+    float: right;
+}
+
+.techandall-theme {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    padding-bottom: 10px;
+}
+
+.services {
+    padding-top: 70px;
+    padding-bottom: 70px;
+    background-color: #232327;
+}
+
+.services-text {
+    background-color: rgba(0, 0, 0, 0);
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: white;
+    font-weight: 400;
+    text-align: center;
+}
+
+.services-header {
+    padding-bottom: 10px;
+    font-size: 18px;
+    line-height: 18px;
+    letter-spacing: 2px;
+}
+
+.footer {
+    padding-top: 35px;
+    padding-bottom: 35px;
+    background-color: #222;
+    color: #666;
+    font-weight: 400;
+}
+
+    .footer a {
+        color: #666;
+    }
+
+.footer-left {
+    float: left;
+}
+
+.footer-right {
+    float: right;
+}
+
+.theme-link-block {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@media (max-width: 991px) {
+    body {
+        box-shadow: none;
+    }
+
+    h1 {
+        padding-top: 80px;
+    }
+
+    .logo {
+        padding-top: 30px;
+        padding-bottom: 15px;
+    }
+
+    .hero-image {
+        padding-bottom: 384px;
+        background-image: url(../images/country.jpg);
+        background-size: 1200px;
+    }
+
+    .features {
+        height: auto;
+        margin-bottom: 25px;
+        padding-top: 50px;
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
+    .features-wrapper {
+        height: auto;
+    }
+
+    .feature-p {
+        height: auto;
+        padding-bottom: 20px;
+    }
+
+    .hero-description {
+        padding-bottom: 0px;
+    }
+
+    .themes-wrapper {
+        height: auto;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        box-shadow: none;
+    }
+
+    .themes-container {
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+
+    .themes-header {
+        padding-top: 10px;
+    }
+
+    .theme-thumbnail {
+        width: 214px;
+    }
+
+    .themes {
+        margin-bottom: 0px;
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
+    .theme-center {
+        height: 188px;
+        text-align: center;
+    }
+
+    .keyfeatures {
+        padding: 40px 10px 25px;
+    }
+
+    .footer {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+}
+
+@media (max-width: 767px) {
+    h1 {
+        font-size: 20px;
+        letter-spacing: 4px;
+    }
+
+    .features {
+        height: auto;
+        margin-top: 20px;
+        margin-bottom: 10px;
+        padding-top: 0px;
+    }
+
+    .features-wrapper {
+        height: auto;
+        padding-left: 15px;
+    }
+
+    .features-box {
+        height: auto;
+        padding-right: 30px;
+        padding-left: 5px;
+    }
+
+    .hero-description {
+        font-size: 10px;
+    }
+
+    .themes-wrapper {
+        height: auto;
+        padding-bottom: 0px;
+    }
+
+    .themes-container {
+        height: auto;
+    }
+
+    .themes-header {
+        margin-bottom: 20px;
+        padding-top: 0px;
+    }
+
+    .last-feature {
+        padding-right: 30px;
+        padding-left: 5px;
+    }
+
+    .first-feature-box {
+        padding-right: 30px;
+        padding-left: 5px;
+    }
+
+    .theme-left {
+        margin-bottom: 30px;
+        padding-right: 0px;
+        padding-bottom: 0px;
+        text-align: center;
+    }
+
+    .theme-thumbnail {
+        width: 290px;
+        text-align: center;
+    }
+
+    .themes {
+        margin-bottom: 0px;
+        padding-top: 0px;
+    }
+
+    .theme-center {
+        height: auto;
+        margin-bottom: 30px;
+        padding-right: 0px;
+        padding-left: 0px;
+        text-align: center;
+    }
+
+    .theme-right {
+        margin-bottom: 30px;
+        padding-left: 0px;
+        text-align: center;
+    }
+
+    .center-block {
+        padding-bottom: 20px;
+    }
+
+    .footer {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
+    .footer-left {
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+        float: none;
+        text-align: center;
+    }
+
+    .footer-right {
+        float: none;
+        text-align: center;
+    }
+}
+
+@media (max-width: 479px) {
+    h1 {
+        padding-top: 35px;
+        font-size: 14px;
+        line-height: 27px;
+        letter-spacing: 4px;
+    }
+
+    .logo {
+        padding-top: 15px;
+    }
+
+    .hero-image {
+        padding-right: 20px;
+        padding-bottom: 185px;
+        padding-left: 20px;
+        background-image: url(../images/country.jpg);
+        background-size: 900px;
+    }
+
+    .hero-text {
+        padding-top: 10px;
+    }
+
+    .features {
+        height: auto;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+
+    .features-wrapper {
+        height: auto;
+        padding-left: 10px;
+    }
+
+    .feature-p {
+        height: 102px;
+    }
+
+    .features-box {
+        height: 135px;
+        padding-left: 20px;
+    }
+
+    .hero-description {
+        padding-right: 30px;
+        padding-bottom: 43px;
+        padding-left: 30px;
+    }
+
+    .themes-wrapper {
+        padding-bottom: 1px;
+    }
+
+    .themes-header {
+        margin-bottom: 20px;
+        padding-top: 10px;
+    }
+
+    .last-feature {
+        padding-right: 30px;
+        padding-left: 20px;
+    }
+
+    .first-feature-box {
+        padding-bottom: 30px;
+        padding-left: 20px;
+    }
+
+    .themes {
+        text-align: center;
+    }
+}

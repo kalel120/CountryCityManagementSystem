@@ -5,6 +5,15 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title>City Entry</title>
+      <style>
+        body {
+            background-image: url("../FrontEnd/images/city_insert.jpg");
+            background-position: 0% 0%;
+            background-size: 1500px;
+            background-attachment: fixed;
+}
+        
+    </style>
     <meta charset="utf-8" />
     <!-- Include Font Awesome. -->
     <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
@@ -33,11 +42,11 @@
     <form id="form1" runat="server">
     <div style="height: 661px">
     
-        <asp:Panel ID="Panel1" runat="server" Height="297px">
+        <asp:Panel ID="Panel1" runat="server" Height="330px">
             City Entry<br />
             <br />
             <asp:Label ID="Label1" runat="server" Text="Name"></asp:Label>
-            &nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <asp:TextBox ID="cityNameTextBox" runat="server"></asp:TextBox>
             <br />
             <asp:Label ID="Label2" runat="server" Text="About"></asp:Label>
@@ -46,18 +55,21 @@
                 
             </textarea><br />
             <asp:Label ID="Label3" runat="server" Text="No. of Dwellers"></asp:Label>
-            <asp:TextBox ID="noOfDwellersTextBox" runat="server" style="margin-left: 11px"></asp:TextBox>
+            <asp:TextBox ID="noOfDwellersTextBox" runat="server" style="margin-left: 47px"></asp:TextBox>
+            <br />
             <br />
             <asp:Label ID="Label4" runat="server" Text="Location"></asp:Label>
             &nbsp;&nbsp;&nbsp;
-            <asp:TextBox ID="locationTextBox" runat="server" style="margin-left: 39px"></asp:TextBox>
+            <asp:TextBox ID="locationTextBox" runat="server" style="margin-left: 75px"></asp:TextBox>
+            <br />
             <br />
             <asp:Label ID="Label5" runat="server" Text="Weather"></asp:Label>
             &nbsp;
-            <asp:TextBox ID="weatherTextBox" runat="server" style="margin-left: 46px"></asp:TextBox>
+            <asp:TextBox ID="weatherTextBox" runat="server" style="margin-left: 84px"></asp:TextBox>
+            <br />
             <br />
             <asp:Label ID="Label6" runat="server" Text="CountryName"></asp:Label>
-            <asp:DropDownList ID="cityCountryDropDownList" runat="server" Height="16px" style="margin-left: 58px" Width="123px">
+            <asp:DropDownList ID="cityCountryDropDownList" runat="server" Height="27px" style="margin-left: 60px" Width="127px">
             </asp:DropDownList>
             <br />
             <br />
@@ -70,7 +82,7 @@
             <asp:Label ID="messageLabel" runat="server"></asp:Label>
             <br />
             <asp:Panel ID="Panel2" runat="server" Height="181px">
-                <asp:GridView ID="cityGridView" runat="server" AutoGenerateColumns="False" Height="33px" Width="212px">
+                <asp:GridView ID="cityGridView" runat="server" AutoGenerateColumns="False" Height="33px" Width="593px" BackColor="White" BorderColor="#336666" BorderStyle="Double" BorderWidth="3px" CellPadding="4" GridLines="Horizontal">
                      <Columns>
                          <asp:TemplateField HeaderText="SL#">
                         <ItemTemplate>
@@ -93,6 +105,15 @@
                             </ItemTemplate>
                         </asp:TemplateField>                     
                     </Columns>
+                     <FooterStyle BackColor="White" ForeColor="#333333" />
+                     <HeaderStyle BackColor="#336666" Font-Bold="True" ForeColor="White" />
+                     <PagerStyle BackColor="#336666" ForeColor="White" HorizontalAlign="Center" />
+                     <RowStyle BackColor="White" ForeColor="#333333" />
+                     <SelectedRowStyle BackColor="#339966" Font-Bold="True" ForeColor="White" />
+                     <SortedAscendingCellStyle BackColor="#F7F7F7" />
+                     <SortedAscendingHeaderStyle BackColor="#487575" />
+                     <SortedDescendingCellStyle BackColor="#E5E5E5" />
+                     <SortedDescendingHeaderStyle BackColor="#275353" />
                 </asp:GridView>
             </asp:Panel>
         </asp:Panel>

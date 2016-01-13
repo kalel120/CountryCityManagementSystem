@@ -5,6 +5,14 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title>Country Entry</title>
+    <style>
+        body {
+            background-image: url("../FrontEnd/images/country_entry.jpg");
+            background-position: 0% 0%;
+            background-size: 1500px;
+            background-attachment: fixed;
+        }
+    </style>
     <meta charset="utf-8" />
     <!-- Include Font Awesome. -->
     <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
@@ -42,6 +50,7 @@
                 <br />
                 <asp:Button ID="saveButton" runat="server" Text="Save" OnClick="saveButton_Click" Width="60px" />
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+               
                 <asp:Button ID="cancelButton" runat="server" Text="Cancel" OnClick="cancelButton_Click" />
                 <br />
                 <br />
@@ -49,7 +58,7 @@
                 <asp:Label ID="messageLabel" runat="server"></asp:Label>
                 <br />
                 <asp:Panel runat="server" ID="gridviewPanel">
-                    <asp:GridView ID="countryEntryGridView" runat="server" AutoGenerateColumns="False" Style="margin-left: 0; margin-top: 37px;" Height="227px" Width="768px">
+                    <asp:GridView ID="countryEntryGridView" runat="server" AutoGenerateColumns="False" Style="margin-left: 0; margin-top: 3px;" Height="186px" Width="768px" BackColor="White" BorderColor="#336666" BorderStyle="Double" BorderWidth="3px" CellPadding="4" GridLines="Horizontal">
                         <Columns>
                             <asp:TemplateField HeaderText="SL#">
                                 <ItemTemplate>
@@ -67,12 +76,23 @@
                                 </ItemTemplate>
                             </asp:TemplateField>
                         </Columns>
+                        <FooterStyle BackColor="White" ForeColor="#333333" />
+                        <HeaderStyle BackColor="#336666" Font-Bold="True" ForeColor="White" />
+                        <PagerStyle BackColor="#336666" ForeColor="White" HorizontalAlign="Center" />
+                        <RowStyle BackColor="White" ForeColor="#333333" />
+                        <SelectedRowStyle BackColor="#339966" Font-Bold="True" ForeColor="White" />
+                        <SortedAscendingCellStyle BackColor="#F7F7F7" />
+                        <SortedAscendingHeaderStyle BackColor="#487575" />
+                        <SortedDescendingCellStyle BackColor="#E5E5E5" />
+                        <SortedDescendingHeaderStyle BackColor="#275353" />
                     </asp:GridView>
                 </asp:Panel>
             </asp:Panel>
 
         </div>
         &nbsp;
+
+       
 
         <!-- Include jQuery. -->
         <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>

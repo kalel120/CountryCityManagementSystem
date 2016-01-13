@@ -5,10 +5,20 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title>View Countries</title>
+     <style>
+        body {
+            background-image: url("../FrontEnd/images/country_2.jpg");
+            background-position: 0% 0%;
+            background-repeat: repeat repeat;
+            background-size: 1400px;
+            background-attachment: fixed;
+}
+        }
+    </style>
 </head>
-<body style="height: 496px">
+<body style="height: 650px">
     <form id="form1" runat="server">
-        <div style="height: 484px">
+        <div style="height: 801px">
 
             <asp:Label ID="Label1" runat="server" Font-Bold="True" Font-Size="X-Large" ForeColor="Black" Text="View Countries"></asp:Label>
             <br />
@@ -36,8 +46,8 @@
             <asp:Label ID="messageLabel" runat="server"></asp:Label>
         <br />
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <asp:Panel ID="gridPanel" runat="server" BackColor="#FFF3E8" BorderColor="#FFE2C6" BorderStyle="Solid" Height="210px" Style="margin-left: 157px" Width="608px">
-            <asp:GridView ID="countryGridView" runat="server" AutoGenerateColumns="False" BackColor="LightGoldenrodYellow" BorderColor="Tan" BorderWidth="1px" CellPadding="2" ForeColor="Black" GridLines="None" style="margin-left: 18px; margin-top: 20px" Width="574px" AllowPaging="True" PageSize="2" OnPageIndexChanging="countryGridView_PageIndexChanging">
+        <asp:Panel ID="gridPanel" runat="server" BackColor="#FFF3E8" BorderColor="#FFE2C6" BorderStyle="Solid" Height="358px" Style="margin-left: 157px" Width="643px">
+            <asp:GridView ID="countryGridView" runat="server" AutoGenerateColumns="False" BackColor="LightGoldenrodYellow" BorderColor="Tan" BorderWidth="1px" CellPadding="2" ForeColor="Black" GridLines="None" style="margin-left: 18px; margin-top: 20px" Width="574px" AllowPaging="True" PageSize="2" OnPageIndexChanging="countryGridView_PageIndexChanging" Height="104px">
                 <AlternatingRowStyle BackColor="PaleGoldenrod" />
 
                 <Columns>

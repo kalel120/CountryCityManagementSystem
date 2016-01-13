@@ -61,6 +61,9 @@
     <Content Include="froala_editor_2.0.5\html\file_s3_upload.php" />
     <Content Include="froala_editor_2.0.5\html\image_s3_upload.php" />
     <Content Include="froala_editor_2.0.5\package.json" />
+    <Content Include="FrontEnd\images\logo.psd" />
+    <Content Include="FrontEnd\images\Thumbs.db" />
+    <Content Include="FrontEnd\images\title.psd" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -230,6 +233,40 @@
     <Content Include="froala_editor_2.0.5\js\plugins\table.min.js" />
     <Content Include="froala_editor_2.0.5\js\plugins\url.min.js" />
     <Content Include="froala_editor_2.0.5\js\plugins\video.min.js" />
+    <Content Include="FrontEnd\css\component.css" />
+    <Content Include="FrontEnd\css\default.css" />
+    <Content Include="FrontEnd\css\navcss.css" />
+    <Content Include="FrontEnd\css\normalize.css" />
+    <Content Include="FrontEnd\css\style.css" />
+    <Content Include="FrontEnd\css\techandallthemes.webflow.css" />
+    <Content Include="FrontEnd\css\webflow.css" />
+    <Content Include="FrontEnd\images\1.jpg" />
+    <Content Include="FrontEnd\images\2.jpg" />
+    <Content Include="FrontEnd\images\3.jpg" />
+    <Content Include="FrontEnd\images\4.jpg" />
+    <Content Include="FrontEnd\images\5.jpg" />
+    <Content Include="FrontEnd\images\6.jpg" />
+    <Content Include="FrontEnd\images\back.jpg" />
+    <Content Include="FrontEnd\images\background.jpg" />
+    <Content Include="FrontEnd\images\bg.jpg" />
+    <Content Include="FrontEnd\images\bg2.jpg" />
+    <Content Include="FrontEnd\images\city_insert.jpg" />
+    <Content Include="FrontEnd\images\country.jpg" />
+    <Content Include="FrontEnd\images\country_2.jpg" />
+    <Content Include="FrontEnd\images\country_entry.jpg" />
+    <Content Include="FrontEnd\images\country_view.jpg" />
+    <Content Include="FrontEnd\images\herotext.png" />
+    <Content Include="FrontEnd\images\icon1.png" />
+    <Content Include="FrontEnd\images\icon2.png" />
+    <Content Include="FrontEnd\images\icon3.png" />
+    <Content Include="FrontEnd\images\view_city.jpg" />
+    <Content Include="FrontEnd\images\whitelogo.png" />
+    <Content Include="FrontEnd\images\wire_idevices.png" />
+    <Content Include="FrontEnd\js\borderMenu.js" />
+    <Content Include="FrontEnd\js\classie.js" />
+    <Content Include="FrontEnd\js\index.js" />
+    <Content Include="FrontEnd\js\modernizr.custom.js" />
+    <Content Include="FrontEnd\js\modernizr.js" />
     <Content Include="Global.asax" />
     <Content Include="UI\CityEntryUI.aspx" />
     <Content Include="UI\CountryEntryUI.aspx" />
@@ -291,7 +328,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="FrontEnd\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

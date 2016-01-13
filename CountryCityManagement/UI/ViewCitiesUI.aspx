@@ -5,6 +5,15 @@
 <head>
     <meta charset="UTF-8">
     <title>View Cities</title>
+    <style>
+        body {
+            background-image: url("../FrontEnd/images/view_city.jpg");
+            background-position: 0% 0%;
+            background-size: 1500px;
+            background-attachment: fixed;
+}
+        }
+    </style>
     <%--<link href="../CSS/resetCSS.css" rel="stylesheet" />--%>
 </head>
 <body>
