@@ -7,7 +7,8 @@ using CountryCityManagement.Models;
 namespace CountryCityManagement.UI {
     public partial class CityEntryUI : System.Web.UI.Page {
         CityManager manager = new CityManager();
-        protected void Page_Load( object sender, EventArgs e ) {
+        protected void Page_Load(object sender, EventArgs e) {
+            messageLabel.Text = string.Empty;
             LoadAllCities();
             if (!IsPostBack) {
                 LoadAllCountry();
@@ -28,11 +29,12 @@ namespace CountryCityManagement.UI {
             cityCountryDropDownList.Items.Insert(0, new ListItem("Select Country"));
         }
 
-        protected void saveCityButton_Click( object sender, EventArgs e ) {
+        protected void saveCityButton_Click(object sender, EventArgs e) {
             int parsedDwellervalue;
             string cityName = cityNameTextBox.Text;
             string aboutCity = aboutTextArea.Value;
             string totalDwellers = noOfDwellersTextBox.Text;
+            totalDwellers = totalDwellers.Replace(",", "");
             string cityLocation = locationTextBox.Text;
             string cityWeather = weatherTextBox.Text;
             int countryIDfromDropDown;
@@ -66,7 +68,7 @@ namespace CountryCityManagement.UI {
             }
         }
 
-        protected void cancelCityButton_Click( object sender, EventArgs e ) {
+        protected void cancelCityButton_Click(object sender, EventArgs e) {
             ClearAllFields();
             Response.Redirect("IndexUI.aspx");
         }

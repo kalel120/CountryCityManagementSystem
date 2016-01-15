@@ -12,13 +12,17 @@ namespace CountryCityManagement.UI {
         protected void saveButton_Click( object sender, EventArgs e ) {
             Country objCountry = new Country();
             double parsedValue;
+            int parsedInteger;
             objCountry.CountryName = nameTextBox.Text;
             objCountry.AboutCountry = aboutTextArea.Value;
             if (objCountry.CountryName == string.Empty) {
                 messageLabel.Text = "Name Field is Empty";
             }
             else if (double.TryParse(objCountry.CountryName, out parsedValue)) {
-                messageLabel.Text = "Invalid Name Input";
+                messageLabel.Text = "Invalid Name Input!";
+            }
+            else if(int.TryParse(objCountry.CountryName,out parsedInteger)) {
+                messageLabel.Text = "Invalid Name Input!";
             }
             else if (objCountryManager.CheckCountryByName(objCountry.CountryName)) {
                 messageLabel.Text = "Country Name already Exists";

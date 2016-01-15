@@ -2,7 +2,7 @@
 
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
 <head runat="server">
     <title>Country Entry</title>
     <meta charset="utf-8" />
@@ -25,11 +25,6 @@
     <link rel="stylesheet" href="../froala_editor_2.0.5/css/plugins/video.css" />
     <!--Floala editors is done.-->
     <link href="../FrontEnd/css/CountryEntryStyle.css" rel="stylesheet" />
-    <style type="text/css">
-        #gridviewClass {
-            margin-left: 1px;
-        }
-    </style>
 </head>
 <body runat="server">
     <form id="CountryEntryForm" runat="server">
@@ -43,15 +38,15 @@
                 <div class="rich">
                     <asp:Label ID="Label2" runat="server" Text="About" Font-Bold="True" Font-Size="Large"></asp:Label>
                     <textarea id="aboutTextArea" runat="server"> </textarea>
+                    <asp:Label ID="messageLabel" runat="server" Font-Bold="True" Font-Size="X-Large" ForeColor="Red"></asp:Label>
                 </div>
                 <br />
                 <br />
                 <asp:Button ID="saveButton" runat="server" Text="Save" OnClick="saveButton_Click" Width="60px" Font-Size="Medium" />
                 <asp:Button ID="cancelButton" runat="server" Text="Cancel" OnClick="cancelButton_Click" Font-Size="Medium" />
                 <br />
-                <br/>
-                <br/>
-                <asp:Label ID="messageLabel" runat="server" Font-Bold="True" Font-Size="Larger"></asp:Label>
+                <br />
+                <br />
                 <br />
                 <asp:Panel runat="server" ID="gridviewPanel">
                     <div id="gridviewClass">
@@ -87,7 +82,6 @@
                 </asp:Panel>
             </asp:Panel>
         </div>
-
         <!-- Include jQuery. -->
         <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
         <!-- Include JS files. -->

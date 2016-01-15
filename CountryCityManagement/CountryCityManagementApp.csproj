@@ -63,8 +63,11 @@
     <Content Include="froala_editor_2.0.5\package.json" />
     <Content Include="FrontEnd\css\CityEntryStyle.css" />
     <Content Include="FrontEnd\css\CountryEntryStyle.css" />
+    <Content Include="FrontEnd\css\navcss.css" />
+    <Content Include="FrontEnd\css\style.css" />
     <Content Include="FrontEnd\css\viewCitiesStyle.css" />
     <Content Include="FrontEnd\css\viewCountryStyle.css" />
+    <Content Include="FrontEnd\css\webflow.css" />
     <Content Include="FrontEnd\images\logo.psd" />
     <Content Include="FrontEnd\images\Thumbs.db" />
     <Content Include="FrontEnd\images\title.psd" />
@@ -177,7 +180,6 @@
     <Content Include="froala_editor_2.0.5\html\toolbar_inline_two.html" />
     <Content Include="froala_editor_2.0.5\html\two_instances.html" />
     <Content Include="froala_editor_2.0.5\html\z_index.html" />
-    <Content Include="froala_editor_2.0.5\img\photo1.jpg" />
     <Content Include="froala_editor_2.0.5\js\froala_editor.min.js" />
     <Content Include="froala_editor_2.0.5\js\languages\ar.js" />
     <Content Include="froala_editor_2.0.5\js\languages\bs.js" />
@@ -238,17 +240,10 @@
     <Content Include="froala_editor_2.0.5\js\plugins\url.min.js" />
     <Content Include="froala_editor_2.0.5\js\plugins\video.min.js" />
     <Content Include="FrontEnd\css\component.css" />
-    <Content Include="FrontEnd\css\navcss.css" />
     <Content Include="FrontEnd\css\normalize.css" />
-    <Content Include="FrontEnd\css\style.css" />
     <Content Include="FrontEnd\css\techandallthemes.webflow.css" />
-    <Content Include="FrontEnd\css\webflow.css" />
-    <Content Include="FrontEnd\images\bg.jpg" />
-    <Content Include="FrontEnd\images\bg2.jpg" />
     <Content Include="FrontEnd\images\city_insert.jpg" />
-    <Content Include="FrontEnd\images\country.jpg" />
     <Content Include="FrontEnd\images\country_2.jpg" />
-    <Content Include="FrontEnd\images\country_entry.jpg" />
     <Content Include="FrontEnd\images\country_view.jpg" />
     <Content Include="FrontEnd\images\herotext.png" />
     <Content Include="FrontEnd\images\icon1.png" />

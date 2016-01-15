@@ -2,7 +2,7 @@
 
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
 <head runat="server">
     <title>Country & City Information Management System</title>
     <meta name="description" content=" Free theme by TechAndAll.com" />
@@ -11,22 +11,12 @@
     <link rel="stylesheet" type="text/css" href="../FrontEnd/css/techandallthemes.webflow.css" />
     <link rel="stylesheet" type="text/css" href="../FrontEnd/css/normalize.css" />
     <link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet" />
-    <link href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet" />
     <link rel="stylesheet" href="../FrontEnd/css/style.css" media="screen" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../FrontEnd/css/navcss.css" />
-
     <script src="../FrontEnd/js/modernizr.custom.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js"></script>
-    <script>
-        WebFont.load({
-            google: {
-                families: ["Montserrat:400,700"]
-            }
-        });
-    </script>
 </head>
 <body>
-   <nav id="bt-menu" class="bt-menu">
+    <nav id="bt-menu" class="bt-menu">
         <a href="#" class="bt-menu-trigger"><span>Menu</span></a>
         <ul>
             <li><a href="../UI/CountryEntryUI.aspx" target="_blank">Introduce Country</a></li>
@@ -67,8 +57,17 @@
     </div>
     <div class="footer">
         <div class="w-container footer-container">
-            <div class="footer-left">&#169;Contact us:<br/>sadiajhn@gmail.com<br>al.imran.04.120@gmail.com<br/>tazreenkunjo@gmail.com<br/>bhuiyan1@gmail.com</div>
-            <div class="footer-right">Designed and developed by:<br/> Lethal 27</div>
+            <div class="footer-left">
+                &#169;Contact us:<br />
+                sadiajhn@gmail.com<br>
+                al.imran.04.120@gmail.com<br />
+                tazreenkunjo@gmail.com<br />
+                bhuiyan1@gmail.com
+            </div>
+            <div class="footer-right">
+                Designed and developed by:<br />
+                Lethal 27
+            </div>
         </div>
     </div>
     <script src="../FrontEnd/js/classie.js"></script>

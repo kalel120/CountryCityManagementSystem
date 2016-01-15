@@ -2,47 +2,34 @@
 
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
 <head runat="server">
     <meta charset="UTF-8" />
     <title>View Countries</title>
     <link href="../FrontEnd/css/viewCountryStyle.css" rel="stylesheet" />
-    <style type="text/css">
-        .inputPanel {
-            width: 600px;
-            margin-left: 8px;
-        }
-
-        .gridviewClass {
-            width: 600px;
-            height: 182px;
-        }
-    </style>
 </head>
 <body>
     <form id="form1" runat="server">
         <div class="wrapper">
-            <div class="inputPanel">
-                <asp:Panel ID="searchPanel" runat="server" BackColor="#FFF3E8" BorderColor="#FF9966" BorderStyle="Double" Height="178px" Style="margin-left: 0px" Width="579px">
-                    <asp:Label ID="Label2" runat="server" Text="Search Criteria" Font-Bold="True" Font-Size="Large"></asp:Label>
-                    <br />
-                    <br/>
-                    <asp:Label ID="Label3" runat="server" Font-Size="Large" Text="Name" Font-Bold="True"></asp:Label>
-                    <div class="nameInput">
-                        <asp:TextBox ID="countrySearchTextBox" runat="server" BorderColor="#FFB693" BorderStyle="Solid" Font-Size="Large"></asp:TextBox>
-                    </div>
-                    <asp:Button ID="searchButton" runat="server" Font-Bold="True" Font-Size="Medium" Text="Search" Width="136px" OnClick="searchButton_Click" />
-                    <br />
-                    <asp:Button ID="homeButton" runat="server" Font-Bold="True" Font-Size="Medium" OnClick="homeButton_Click" Text="Home" />
-                </asp:Panel>
-            </div>
+            <asp:Panel ID="searchPanel" runat="server" BackColor="#FFF3E8">
+                <asp:Label ID="Label2" runat="server" Text="Search Criteria" Font-Bold="True" Font-Size="Large"></asp:Label>
+                <br />
+                <br />
+                <asp:Label ID="Label3" runat="server" Font-Size="Large" Text="Name" Font-Bold="True"></asp:Label>
+                <div class="nameInput">
+                    <asp:TextBox ID="countrySearchTextBox" runat="server" Font-Size="Large"></asp:TextBox>
+                </div>
+                <asp:Button ID="searchButton" runat="server" Font-Bold="True" Font-Size="Medium" Text="Search" Width="136px" OnClick="searchButton_Click" />
+                <br />
+                <asp:Button ID="homeButton" runat="server" Font-Bold="True" Font-Size="Medium" OnClick="homeButton_Click" Text="Home" />
+            </asp:Panel>
             <br />
             <br />
             <asp:Label ID="messageLabel" runat="server" BackColor="#FFA851" Font-Size="Larger" Font-Bold="True"></asp:Label>
             <br />
             <div class="gridviewClass">
-                <asp:GridView ID="countryGridView" runat="server" AutoGenerateColumns="False" Style="margin-left: 0px; margin-top: 20px" Width="597px" AllowPaging="True" PageSize="2" OnPageIndexChanging="countryGridView_PageIndexChanging" Height="143px" BackColor="LightGoldenrodYellow" BorderColor="Tan" BorderWidth="1px" CellPadding="2" ForeColor="Black" GridLines="None">
-                    <AlternatingRowStyle BackColor="PaleGoldenrod" />
+                <asp:GridView ID="countryGridView" runat="server" AutoGenerateColumns="False" Style="margin-left: 0px; margin-top: 20px" Width="994px" AllowPaging="True" PageSize="2" OnPageIndexChanging="countryGridView_PageIndexChanging" Height="143px" BackColor="White" BorderColor="#DEDFDE" BorderWidth="1px" CellPadding="4" ForeColor="Black" GridLines="Vertical" BorderStyle="None">
+                    <AlternatingRowStyle BackColor="White" />
                     <Columns>
                         <asp:TemplateField HeaderText="SL#">
                             <ItemTemplate>
@@ -70,14 +57,15 @@
                             </ItemTemplate>
                         </asp:TemplateField>
                     </Columns>
-                    <FooterStyle BorderColor="#FF9966" BorderStyle="Dotted" BackColor="Tan" />
-                    <HeaderStyle BackColor="Tan" Font-Bold="True" />
-                    <PagerStyle BackColor="PaleGoldenrod" ForeColor="DarkSlateBlue" HorizontalAlign="Center" />
-                    <SelectedRowStyle BackColor="DarkSlateBlue" ForeColor="GhostWhite" />
-                    <SortedAscendingCellStyle BackColor="#FAFAE7" />
-                    <SortedAscendingHeaderStyle BackColor="#DAC09E" />
-                    <SortedDescendingCellStyle BackColor="#E1DB9C" />
-                    <SortedDescendingHeaderStyle BackColor="#C2A47B" />
+                    <FooterStyle BorderColor="#FF9966" BorderStyle="Dotted" BackColor="#CCCC99" />
+                    <HeaderStyle BackColor="#6B696B" Font-Bold="True" ForeColor="White" />
+                    <PagerStyle BackColor="#F7F7DE" ForeColor="Black" HorizontalAlign="Right" />
+                    <RowStyle BackColor="#F7F7DE" />
+                    <SelectedRowStyle BackColor="#CE5D5A" ForeColor="White" Font-Bold="True" />
+                    <SortedAscendingCellStyle BackColor="#FBFBF2" />
+                    <SortedAscendingHeaderStyle BackColor="#848384" />
+                    <SortedDescendingCellStyle BackColor="#EAEAD3" />
+                    <SortedDescendingHeaderStyle BackColor="#575357" />
                 </asp:GridView>
             </div>
         </div>

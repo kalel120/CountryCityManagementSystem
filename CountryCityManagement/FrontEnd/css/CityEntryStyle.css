@@ -20,22 +20,22 @@
 
 #noOfDwellersTextBox {
     position: relative;
-    left: 86px;
+    left: 65px;
 }
 
 #locationTextBox {
     position: relative;
-    left: 107px;
+    left: 102px;
 }
 
 #weatherTextBox {
     position: relative;
-    left: 101px;
+    left: 109px;
 }
 
 #cityCountryDropDownList {
     position: relative;
-    left: 82px;
+    left: 92px;
 }
 .gridviewClass {
     margin: 0 0 0 0;

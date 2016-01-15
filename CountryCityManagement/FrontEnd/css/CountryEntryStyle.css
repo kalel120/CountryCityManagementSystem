@@ -1,4 +1,9 @@
-﻿.wrapper {
+﻿* {
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
     width: 960px;
 }
 
@@ -47,6 +52,30 @@ body {
     position: relative;
     left: 200px;
     margin: 0 0 0 0;
+    height: auto;
+    width: auto;
+    text-align: center;
+}
+
+.messageLabel {
+    margin-left: 100px;
+    padding-left: 150px;
+}
+
+.fr-box {
+    margin: 0 auto;
+    height: auto;
+    width: auto;
+}
+
+.fr-top {
+    margin: 0 auto;
+    height: auto;
+    width: auto;
+}
+
+.fr-basic {
+    margin: 0 auto;
     height: auto;
     width: auto;
 }
