@@ -73,13 +73,17 @@ namespace CountryCityManagement.Database_Access {
 
         public int InsertCity( City city ) {
             connection.Close();
-            string insertQuery = "INSERT INTO  City VALUES(@name, CONVERT(varbinary(MAX),'" + city.AboutCity + "'),@dwellers,@location,@weather,@countryId)";
+            string insertQuery = "INSERT INTO  City VALUES(@name, @about ,@dwellers,@location,@weather,@countryId)";
             SqlCommand insertCommand = new SqlCommand(insertQuery, connection);
             connection.Open();
             insertCommand.Parameters.Clear();
             insertCommand.Parameters.Add("name", SqlDbType.NVarChar);
             insertCommand.Parameters["name"].Value = city.CityName;
 
+            byte[] aboutBytes = Encoding.UTF8.GetBytes(city.AboutCity);
+            insertCommand.Parameters.Add("about", SqlDbType.VarBinary);
+            insertCommand.Parameters["about"].Value = aboutBytes;
+            
             insertCommand.Parameters.Add("dwellers", SqlDbType.NVarChar);
             insertCommand.Parameters["dwellers"].Value = city.Dwellers;
 
@@ -115,8 +119,7 @@ namespace CountryCityManagement.Database_Access {
 
                 byte[] cityAboutBinaryString = (byte[])(reader["About"]);
                 cityViewModelObj.AboutCity = Encoding.UTF8.GetString(cityAboutBinaryString);
-                //cityViewModelObj.AboutCity = reader["About"].ToString();
-
+                
                 cityViewModelObj.NoOfDwellers = Convert.ToDouble(reader["No. of dwellers"].ToString());
                 cityViewModelObj.Location = reader["Location"].ToString();
                 cityViewModelObj.Weather = reader["Weather"].ToString();
@@ -124,8 +127,7 @@ namespace CountryCityManagement.Database_Access {
 
                 byte[] countryAboutBinaryString = (byte[])(reader["About Country"]);
                 cityViewModelObj.AboutCountry = Encoding.UTF8.GetString(countryAboutBinaryString);
-                //cityViewModelObj.AboutCountry = reader["About Country"].ToString();
-
+                
                 cityView.Add(cityViewModelObj);
             }
 

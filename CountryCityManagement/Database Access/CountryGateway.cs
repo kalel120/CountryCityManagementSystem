@@ -30,14 +30,18 @@ namespace CountryCityManagement.Database_Access {
         }
 
         internal int InsertInfo( Country objCountry ) {
-            string insertQuery = "INSERT INTO  Country VALUES(@name, CONVERT(varbinary(MAX),'" + objCountry.AboutCountry + "'))";
+            string insertQuery = "INSERT INTO  Country VALUES(@name, @about)";
             SqlCommand insertCommand = new SqlCommand(insertQuery, connection);
 
             insertCommand.Parameters.Clear();
             insertCommand.Parameters.Add("name", SqlDbType.NVarChar);
             insertCommand.Parameters["name"].Value = objCountry.CountryName;
 
+            byte[] aboutBytes = Encoding.UTF8.GetBytes(objCountry.AboutCountry);
+            insertCommand.Parameters.Add("about", SqlDbType.VarBinary);
+            insertCommand.Parameters["about"].Value = aboutBytes;
             connection.Open();
+
             int affectedRow = insertCommand.ExecuteNonQuery();
             connection.Close();
             return affectedRow;
